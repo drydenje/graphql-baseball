@@ -20,6 +20,13 @@ const typeDefs = gql`
     players: [Player]
     player(id: ID): Player
   }
+
+  type FantasyTeam {
+    id: ID!
+    name: String!
+    manager: String!
+    year: String!
+  }
 `;
 
 const players = [
