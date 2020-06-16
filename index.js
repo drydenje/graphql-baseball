@@ -8,12 +8,20 @@ const typeDefs = gql`
     INJURY_FLYER
     AVOID
     PROSPECT
+    UNDECIDED
   }
 
   type Player {
     id: ID!
+    team: Team
     name: String!
     birthDate: String
+  }
+
+  type Team {
+    id: ID!
+    city: String!
+    name: String!
   }
 
   type Query {
@@ -21,24 +29,42 @@ const typeDefs = gql`
     player(id: ID): Player
   }
 
-  type FantasyTeam {
-    id: ID!
-    name: String!
-    manager: String!
-    year: String!
+  input PlayerInput {
+    id: ID
+    name: String
+    birthDate: String
+  }
+
+  type Mutation {
+    addPlayer(player: PlayerInput): [Player]
   }
 `;
 
-const players = [
+let players = [
   {
     name: "Mike Trout",
+    team: "anaheim",
     id: "1",
     birthDate: "10-10-1983",
   },
   {
     name: "Mookie Betts",
+    team: "boston",
     id: "2",
     birthDate: "10-10-1985",
+  },
+];
+
+const teams = [
+  {
+    id: "boston",
+    city: "Boston",
+    name: "Red Sox",
+  },
+  {
+    id: "anaheim",
+    city: "Los Angeles",
+    name: "Angels",
   },
 ];
 
@@ -52,6 +78,22 @@ const resolvers = {
         return player.id === id;
       });
       return foundPlayer;
+    },
+  },
+  Player: {
+    team: (obj, arg, context) => {
+      const foundTeam = teams.find((team) => {
+        return team.id === obj.team;
+      });
+      return foundTeam;
+    },
+  },
+  Mutation: {
+    addPlayer: (obj, { player }, context) => {
+      // database stuff
+      const newPlayerList = [...players, player];
+      // return data as expected in schema
+      return newPlayerList;
     },
   },
 };
