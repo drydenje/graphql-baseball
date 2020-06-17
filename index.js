@@ -33,6 +33,13 @@ const typeDefs = gql`
     id: ID
     name: String
     birthDate: String
+    team: ID
+  }
+
+  input TeamInput {
+    id: ID
+    city: String
+    name: PlayerInput
   }
 
   type Mutation {
@@ -92,6 +99,7 @@ const resolvers = {
     addPlayer: (obj, { player }, context) => {
       // database stuff
       const newPlayerList = [...players, player];
+      // players = newPlayerList;
       // return data as expected in schema
       return newPlayerList;
     },
