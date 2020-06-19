@@ -1,4 +1,21 @@
+require("dotenv").config();
 const { ApolloServer, gql } = require("apollo-server");
+
+// const str = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0-drs5r.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
+// console.log(str);
+// console.log(process.user)
+
+const mongoose = require("mongoose");
+mongoose.connect(
+  `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0-drs5r.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
+const db = mongoose.connection;
+
+// console.log("process:", process.env);
 
 const typeDefs = gql`
   enum Status {
@@ -64,12 +81,12 @@ let players = [
 
 const teams = [
   {
-    id: "boston",
+    id: 1,
     city: "Boston",
     name: "Red Sox",
   },
   {
-    id: "anaheim",
+    id: 2,
     city: "Los Angeles",
     name: "Angels",
   },
@@ -97,6 +114,7 @@ const resolvers = {
   },
   Mutation: {
     addPlayer: (obj, { player }, context) => {
+      // console.log("context:", context);
       // database stuff
       const newPlayerList = [...players, player];
       // players = newPlayerList;
@@ -111,8 +129,21 @@ const server = new ApolloServer({
   resolvers,
   introspection: true,
   playground: true,
+  // any requests pass through this function
+  context: ({ req }) => {
+    const fakeUser = {
+      userId: "helloImasuser",
+    };
+    return {
+      ...fakeUser,
+    };
+  },
 });
 
-server.listen({ port: process.env.PORT || 4001 }).then(({ url }) => {
-  console.log(`Server started at ${url}`);
+db.on("error", console.error.bind(console, "connection error:"));
+db.once("open", function () {
+  console.log("✅ Database connection established ✅");
+  server.listen({ port: process.env.PORT || 4001 }).then(({ url }) => {
+    console.log(`Server started at ${url}`);
+  });
 });
