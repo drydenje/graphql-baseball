@@ -1,10 +1,6 @@
 require("dotenv").config();
 const { ApolloServer, gql } = require("apollo-server");
 
-// const str = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0-drs5r.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
-// console.log(str);
-// console.log(process.user)
-
 const mongoose = require("mongoose");
 mongoose.connect(
   `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0-drs5r.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`,
@@ -15,7 +11,14 @@ mongoose.connect(
 );
 const db = mongoose.connection;
 
-// console.log("process:", process.env);
+const playerSchema = new mongoose.Schema({
+  teamId: String,
+  name: String,
+  birthDate: Date,
+  status: String,
+});
+
+const Player = mongoose.model("Player", playerSchema);
 
 const typeDefs = gql`
   enum Status {
@@ -64,21 +67,6 @@ const typeDefs = gql`
   }
 `;
 
-let players = [
-  {
-    name: "Mike Trout",
-    team: "anaheim",
-    id: "1",
-    birthDate: "10-10-1983",
-  },
-  {
-    name: "Mookie Betts",
-    team: "boston",
-    id: "2",
-    birthDate: "10-10-1985",
-  },
-];
-
 const teams = [
   {
     id: 1,
@@ -116,10 +104,14 @@ const resolvers = {
     addPlayer: (obj, { player }, context) => {
       // console.log("context:", context);
       // database stuff
-      const newPlayerList = [...players, player];
+      // const newPlayerList = [...players, player];
       // players = newPlayerList;
+      console.log("Player:", player);
+      const newPlayer = Player.create({
+        ...player,
+      });
       // return data as expected in schema
-      return newPlayerList;
+      return [newPlayer];
     },
   },
 };
