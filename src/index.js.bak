@@ -17,7 +17,8 @@ const playerSchema = new mongoose.Schema({
   birthDate: Date,
   status: String,
 });
-
+reactsecurity;
+CUx2UANPWtvoadyV;
 const Player = mongoose.model("Player", playerSchema);
 
 const typeDefs = gql`
@@ -66,19 +67,6 @@ const typeDefs = gql`
     addPlayer(player: PlayerInput): [Player]
   }
 `;
-
-const teams = [
-  {
-    id: 1,
-    city: "Boston",
-    name: "Red Sox",
-  },
-  {
-    id: 2,
-    city: "Los Angeles",
-    name: "Angels",
-  },
-];
 
 const resolvers = {
   Query: {

@@ -11,9 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^2.14.4",
-    "dotenv": "^8.2.0",
-    "graphql": "^15.1.0",
-    "mongoose": "^5.9.19"
+    "apollo-server": "^2.25.3",
+    "dotenv": "^8.6.0",
+    "graphql": "^15.8.0",
+    "mongoose": "^5.13.14"
   }
 }
