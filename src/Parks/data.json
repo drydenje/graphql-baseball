@@ -1,0 +1,64 @@
+[
+  {
+    "_id": {
+      "$oid": "6228e1919604c61c8260323d"
+    },
+    "key": "ALB01",
+    "name": "Riverside Park",
+    "city": "Albany",
+    "state": "NY",
+    "country": "US"
+  },
+  {
+    "_id": {
+      "$oid": "6228e1919604c61c8260323e"
+    },
+    "key": "ALT01",
+    "name": "Columbia Park",
+    "city": "Altoona",
+    "state": "PA",
+    "country": "US"
+  },
+  {
+    "_id": {
+      "$oid": "6228e1919604c61c8260323f"
+    },
+    "key": "ANA01",
+    "name": "Angel Stadium of Anaheim",
+    "alias": "Edison Field; Anaheim Stadium",
+    "city": "Anaheim",
+    "state": "CA",
+    "country": "US"
+  },
+  {
+    "_id": {
+      "$oid": "6228e1919604c61c82603240"
+    },
+    "key": "ARL01",
+    "name": "Arlington Stadium",
+    "city": "Arlington",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "_id": {
+      "$oid": "6228e1919604c61c82603241"
+    },
+    "key": "ARL02",
+    "name": "Rangers Ballpark in Arlington",
+    "alias": "The Ballpark in Arlington; Ameriquest Fl",
+    "city": "Arlington",
+    "state": "TX",
+    "country": "US"
+  },
+  {
+    "_id": {
+      "$oid": "6228e1919604c61c82603242"
+    },
+    "key": "ATL01",
+    "name": "Atlanta-Fulton County Stadium",
+    "city": "Atlanta",
+    "state": "GA",
+    "country": "US"
+  }
+]
