@@ -9,6 +9,7 @@ const typeDef = gql`
 const server = new ApolloServer({
   typeDefs: [typeDef, players.typeDef, parks.typeDef],
   resolvers: [players.resolvers, parks.resolvers],
+  playground: true,
 });
 
 server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
