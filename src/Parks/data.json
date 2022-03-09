@@ -1,64 +1,2354 @@
-[
-  {
-    "_id": {
-      "$oid": "6228e1919604c61c8260323d"
-    },
-    "key": "ALB01",
-    "name": "Riverside Park",
-    "city": "Albany",
-    "state": "NY",
-    "country": "US"
+[{
+  "_id": {
+    "$oid": "6228e1919604c61c8260323d"
   },
-  {
-    "_id": {
-      "$oid": "6228e1919604c61c8260323e"
-    },
-    "key": "ALT01",
-    "name": "Columbia Park",
-    "city": "Altoona",
-    "state": "PA",
-    "country": "US"
+  "key": "ALB01",
+  "name": "Riverside Park",
+  "city": "Albany",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260323e"
   },
-  {
-    "_id": {
-      "$oid": "6228e1919604c61c8260323f"
-    },
-    "key": "ANA01",
-    "name": "Angel Stadium of Anaheim",
-    "alias": "Edison Field; Anaheim Stadium",
-    "city": "Anaheim",
-    "state": "CA",
-    "country": "US"
+  "key": "ALT01",
+  "name": "Columbia Park",
+  "city": "Altoona",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260323f"
   },
-  {
-    "_id": {
-      "$oid": "6228e1919604c61c82603240"
-    },
-    "key": "ARL01",
-    "name": "Arlington Stadium",
-    "city": "Arlington",
-    "state": "TX",
-    "country": "US"
+  "key": "ANA01",
+  "name": "Angel Stadium of Anaheim",
+  "alias": "Edison Field; Anaheim Stadium",
+  "city": "Anaheim",
+  "state": "CA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603240"
   },
-  {
-    "_id": {
-      "$oid": "6228e1919604c61c82603241"
-    },
-    "key": "ARL02",
-    "name": "Rangers Ballpark in Arlington",
-    "alias": "The Ballpark in Arlington; Ameriquest Fl",
-    "city": "Arlington",
-    "state": "TX",
-    "country": "US"
+  "key": "ARL01",
+  "name": "Arlington Stadium",
+  "city": "Arlington",
+  "state": "TX",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603241"
   },
-  {
-    "_id": {
-      "$oid": "6228e1919604c61c82603242"
-    },
-    "key": "ATL01",
-    "name": "Atlanta-Fulton County Stadium",
-    "city": "Atlanta",
-    "state": "GA",
-    "country": "US"
-  }
-]
+  "key": "ARL02",
+  "name": "Rangers Ballpark in Arlington",
+  "alias": "The Ballpark in Arlington; Ameriquest Fl",
+  "city": "Arlington",
+  "state": "TX",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603242"
+  },
+  "key": "ATL01",
+  "name": "Atlanta-Fulton County Stadium",
+  "city": "Atlanta",
+  "state": "GA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603243"
+  },
+  "key": "ATL02",
+  "name": "Turner Field",
+  "city": "Atlanta",
+  "state": "GA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603244"
+  },
+  "key": "ATL03",
+  "name": "Suntrust Park",
+  "city": "Atlanta",
+  "state": "GA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603245"
+  },
+  "key": "BAL01",
+  "name": "Madison Avenue Grounds",
+  "city": "Baltimore",
+  "state": "MD",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603246"
+  },
+  "key": "BAL02",
+  "name": "Newington Park",
+  "city": "Baltimore",
+  "state": "MD",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603247"
+  },
+  "key": "BAL03",
+  "name": "Oriole Park I",
+  "city": "Baltimore",
+  "state": "MD",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603248"
+  },
+  "key": "BAL04",
+  "name": "Belair Lot",
+  "city": "Baltimore",
+  "state": "MD",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603249"
+  },
+  "key": "BAL05",
+  "name": "Monumental Park",
+  "city": "Baltimore",
+  "state": "MD",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260324a"
+  },
+  "key": "BAL06",
+  "name": "Oriole Park II",
+  "city": "Baltimore",
+  "state": "MD",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260324b"
+  },
+  "key": "BAL07",
+  "name": "Oriole Park III",
+  "city": "Baltimore",
+  "state": "MD",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260324c"
+  },
+  "key": "BAL09",
+  "name": "Oriole Park IV",
+  "alias": "American League Park",
+  "city": "Baltimore",
+  "state": "MD",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260324d"
+  },
+  "key": "BAL10",
+  "name": "Terrapin Park",
+  "alias": "Oriole Park V",
+  "city": "Baltimore",
+  "state": "MD",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260324e"
+  },
+  "key": "BAL11",
+  "name": "Memorial Stadium",
+  "city": "Baltimore",
+  "state": "MD",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260324f"
+  },
+  "key": "BAL12",
+  "name": "Oriole Park at Camden Yards",
+  "city": "Baltimore",
+  "state": "MD",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603250"
+  },
+  "key": "BOS01",
+  "name": "South End Grounds I",
+  "alias": "Walpole Street Grounds",
+  "city": "Boston",
+  "state": "MA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603251"
+  },
+  "key": "BOS02",
+  "name": "Dartmouth Grounds",
+  "alias": "Union Park",
+  "city": "Boston",
+  "state": "MA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603252"
+  },
+  "key": "BOS03",
+  "name": "South End Grounds II",
+  "city": "Boston",
+  "state": "MA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603253"
+  },
+  "key": "BOS04",
+  "name": "Congress Street Grounds",
+  "city": "Boston",
+  "state": "MA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603254"
+  },
+  "key": "BOS05",
+  "name": "South End Grounds III",
+  "city": "Boston",
+  "state": "MA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603255"
+  },
+  "key": "BOS06",
+  "name": "Huntington Avenue Baseball Grounds",
+  "city": "Boston",
+  "state": "MA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603256"
+  },
+  "key": "BOS07",
+  "name": "Fenway Park",
+  "city": "Boston",
+  "state": "MA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603257"
+  },
+  "key": "BOS08",
+  "name": "Braves Field",
+  "alias": "Bee Hive",
+  "city": "Boston",
+  "state": "MA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603258"
+  },
+  "key": "BUF01",
+  "name": "Riverside Grounds",
+  "city": "Buffalo",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603259"
+  },
+  "key": "BUF02",
+  "name": "Olympic Park I",
+  "city": "Buffalo",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260325a"
+  },
+  "key": "BUF03",
+  "name": "Olympic Park II",
+  "city": "Buffalo",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260325b"
+  },
+  "key": "BUF04",
+  "name": "International Fair Association Grounds",
+  "alias": "Federal League Park",
+  "city": "Buffalo",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260325c"
+  },
+  "key": "CAN01",
+  "name": "Mahaffey Park",
+  "alias": "Pastime Park",
+  "city": "Canton",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260325d"
+  },
+  "key": "CAN02",
+  "name": "Pastime Park",
+  "city": "Canton",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260325e"
+  },
+  "key": "CHI01",
+  "name": "Lake Front Park I",
+  "alias": "Union Base-ball Grounds",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260325f"
+  },
+  "key": "CHI02",
+  "name": "23rd Street Park",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603260"
+  },
+  "key": "CHI03",
+  "name": "Lake Front Park II",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603261"
+  },
+  "key": "CHI05",
+  "name": "South Side Park I",
+  "alias": "Cricket Club Grounds; Union Grounds",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603262"
+  },
+  "key": "CHI06",
+  "name": "West Side Park",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603263"
+  },
+  "key": "CHI07",
+  "name": "South Side Park II",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603264"
+  },
+  "key": "CHI08",
+  "name": "West Side Grounds",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603265"
+  },
+  "key": "CHI09",
+  "name": "South Side Park III",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603266"
+  },
+  "key": "CHI10",
+  "name": "Comiskey Park I",
+  "alias": "White Sox Park",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603267"
+  },
+  "key": "CHI11",
+  "name": "Wrigley Field",
+  "alias": "Weeghman Park; Cubs Park",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603268"
+  },
+  "key": "CHI12",
+  "name": "Guaranteed Rate Field",
+  "alias": "U.S. Cellular Field;White Sox Park; Comiskey Park II",
+  "city": "Chicago",
+  "state": "IL",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603269"
+  },
+  "key": "CIN01",
+  "name": "Lincoln Park Grounds",
+  "alias": "Union Cricket Club Grounds",
+  "city": "Cincinnati",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260326a"
+  },
+  "key": "CIN02",
+  "name": "Avenue Grounds",
+  "city": "Cincinnati",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260326b"
+  },
+  "key": "CIN03",
+  "name": "Bank Street Grounds",
+  "city": "Cincinnati",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260326c"
+  },
+  "key": "CIN04",
+  "name": "League Park I",
+  "city": "Cincinnati",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260326d"
+  },
+  "key": "CIN05",
+  "name": "League Park II",
+  "city": "Cincinnati",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260326e"
+  },
+  "key": "CIN06",
+  "name": "Palace of the Fans",
+  "alias": "League Park III",
+  "city": "Cincinnati",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260326f"
+  },
+  "key": "CIN07",
+  "name": "Crosley Field",
+  "alias": "Redland Field",
+  "city": "Cincinnati",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603270"
+  },
+  "key": "CIN08",
+  "name": "Cinergy Field",
+  "alias": "Riverfront Stadium",
+  "city": "Cincinnati",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603271"
+  },
+  "key": "CIN09",
+  "name": "Great American Ballpark",
+  "city": "Cincinnati",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603272"
+  },
+  "key": "CLE01",
+  "name": "National Association Grounds",
+  "city": "Cleveland",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603273"
+  },
+  "key": "CLE02",
+  "name": "League Park I",
+  "alias": "Kennard Street Park",
+  "city": "Cleveland",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603274"
+  },
+  "key": "CLE03",
+  "name": "League Park II",
+  "alias": "American Association Park",
+  "city": "Cleveland",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603275"
+  },
+  "key": "CLE04",
+  "name": "Brotherhood Park",
+  "alias": "Players League Park",
+  "city": "Cleveland",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603276"
+  },
+  "key": "CLE05",
+  "name": "League Park III",
+  "alias": "National League Park III",
+  "city": "Cleveland",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603277"
+  },
+  "key": "CLE06",
+  "name": "League Park IV",
+  "alias": "Dunn Field",
+  "city": "Cleveland",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603278"
+  },
+  "key": "CLE07",
+  "name": "Cleveland Stadium",
+  "alias": "Municipal Stadium",
+  "city": "Cleveland",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603279"
+  },
+  "key": "CLE08",
+  "name": "Progressive Field",
+  "alias": "Jacobs Field",
+  "city": "Cleveland",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260327a"
+  },
+  "key": "CLE09",
+  "name": "Cedar Avenue Driving Park",
+  "city": "Cleveland",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260327b"
+  },
+  "key": "CLL01",
+  "name": "Euclid Beach Park",
+  "city": "Collinwood",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260327c"
+  },
+  "key": "COL01",
+  "name": "Recreation Park I",
+  "city": "Columbus",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260327d"
+  },
+  "key": "COL02",
+  "name": "Recreation Park II",
+  "city": "Columbus",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260327e"
+  },
+  "key": "COL03",
+  "name": "Neil Park I",
+  "city": "Columbus",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260327f"
+  },
+  "key": "COL04",
+  "name": "Neil Park II",
+  "city": "Columbus",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603280"
+  },
+  "key": "COV01",
+  "name": "Star Baseball Park",
+  "city": "Covington",
+  "state": "KY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603281"
+  },
+  "key": "DAY01",
+  "name": "Fairview Park",
+  "city": "Dayton",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603282"
+  },
+  "key": "DEN01",
+  "name": "Mile High Stadium",
+  "city": "Denver",
+  "state": "CO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603283"
+  },
+  "key": "DEN02",
+  "name": "Coors Field",
+  "city": "Denver",
+  "state": "CO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603284"
+  },
+  "key": "DET01",
+  "name": "Recreation Park",
+  "city": "Detroit",
+  "state": "MI",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603285"
+  },
+  "key": "DET02",
+  "name": "Bennett Park",
+  "city": "Detroit",
+  "state": "MI",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603286"
+  },
+  "key": "DET03",
+  "name": "Burns Park",
+  "alias": "West End Park",
+  "city": "Detroit",
+  "state": "MI",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603287"
+  },
+  "key": "DET04",
+  "name": "Tiger Stadium",
+  "alias": "Navin Field; Briggs Stadium",
+  "city": "Detroit",
+  "state": "MI",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603288"
+  },
+  "key": "DET05",
+  "name": "Comerica Park",
+  "city": "Detroit",
+  "state": "MI",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603289"
+  },
+  "key": "DOV01",
+  "name": "Fairview Park Fair Grounds",
+  "city": "Dover",
+  "state": "DE",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260328a"
+  },
+  "key": "ELM01",
+  "name": "Maple Avenue Driving Park",
+  "city": "Elmira",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260328b"
+  },
+  "key": "FOR01",
+  "name": "Grand Duchess",
+  "alias": "Hamilton Field",
+  "city": "Fort Wayne",
+  "state": "IN",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260328c"
+  },
+  "key": "FOR03",
+  "name": "Jailhouse Flats",
+  "city": "Fort Wayne",
+  "state": "IN",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260328d"
+  },
+  "key": "FTB01",
+  "name": "Fort Bragg Field",
+  "city": "Fort Bragg",
+  "state": "NC",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260328e"
+  },
+  "key": "GEA01",
+  "name": "Geauga Lake Grounds",
+  "alias": "Beyerle's Park",
+  "city": "Geauga Lake",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260328f"
+  },
+  "key": "GLO01",
+  "name": "Gloucester Point Grounds",
+  "city": "Gloucester City",
+  "state": "NJ",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603290"
+  },
+  "key": "GLO02",
+  "name": "Gloucester Fireworks Park",
+  "city": "Gloucester City",
+  "state": "NJ",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603291"
+  },
+  "key": "GRA01",
+  "name": "Ramona Park",
+  "city": "Grand Rapids",
+  "state": "MI",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603292"
+  },
+  "key": "HAR01",
+  "name": "Harrison Field",
+  "city": "Harrison",
+  "state": "NJ",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603293"
+  },
+  "key": "HOB01",
+  "name": "Elysian Field",
+  "city": "Hoboken",
+  "state": "NJ",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603294"
+  },
+  "key": "HON01",
+  "name": "Aloha Stadium",
+  "city": "Honolulu",
+  "state": "HI",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603295"
+  },
+  "key": "HOU01",
+  "name": "Colt Stadium",
+  "city": "Houston",
+  "state": "TX",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603296"
+  },
+  "key": "HOU02",
+  "name": "Astrodome",
+  "city": "Houston",
+  "state": "TX",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603297"
+  },
+  "key": "HOU03",
+  "name": "Minute Maid Park",
+  "alias": "Enron Field; Astros Field",
+  "city": "Houston",
+  "state": "TX",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603298"
+  },
+  "key": "HRT01",
+  "name": "Hartford Ball Club Grounds",
+  "city": "Hartford",
+  "state": "CT",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603299"
+  },
+  "key": "HRT02",
+  "name": "Hartford Trotting Park",
+  "city": "Hartford",
+  "state": "CT",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260329a"
+  },
+  "key": "IND01",
+  "name": "South Street Park",
+  "city": "Indianapolis",
+  "state": "IN",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260329b"
+  },
+  "key": "IND02",
+  "name": "Seventh Street Park I",
+  "city": "Indianapolis",
+  "state": "IN",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260329c"
+  },
+  "key": "IND03",
+  "name": "Bruce Grounds",
+  "city": "Indianapolis",
+  "state": "IN",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260329d"
+  },
+  "key": "IND04",
+  "name": "Seventh Street Park II",
+  "city": "Indianapolis",
+  "state": "IN",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260329e"
+  },
+  "key": "IND05",
+  "name": "Seventh Street Park III",
+  "city": "Indianapolis",
+  "state": "IN",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260329f"
+  },
+  "key": "IND06",
+  "name": "Indianapolis Park",
+  "city": "Indianapolis",
+  "state": "IN",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032a0"
+  },
+  "key": "IND07",
+  "name": "Federal League Park",
+  "alias": "Washington Park",
+  "city": "Indianapolis",
+  "state": "IN",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032a1"
+  },
+  "key": "IRO01",
+  "name": "Windsor Beach",
+  "city": "Irondequoit",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032a2"
+  },
+  "key": "JER01",
+  "name": "Oakdale Park",
+  "city": "Jersey City",
+  "state": "NJ",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032a3"
+  },
+  "key": "JER02",
+  "name": "Roosevelt Stadium",
+  "city": "Jersey City",
+  "state": "NJ",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032a4"
+  },
+  "key": "KAN01",
+  "name": "Athletic Park",
+  "city": "Kansas City",
+  "state": "MO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032a5"
+  },
+  "key": "KAN02",
+  "name": "Association Park",
+  "city": "Kansas City",
+  "state": "MO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032a6"
+  },
+  "key": "KAN03",
+  "name": "Exposition Park",
+  "city": "Kansas City",
+  "state": "MO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032a7"
+  },
+  "key": "KAN04",
+  "name": "Gordon and Koppel Field",
+  "city": "Kansas City",
+  "state": "MO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032a8"
+  },
+  "key": "KAN05",
+  "name": "Municipal Stadium",
+  "city": "Kansas City",
+  "state": "MO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032a9"
+  },
+  "key": "KAN06",
+  "name": "Kauffman Stadium",
+  "alias": "Royals Stadium",
+  "city": "Kansas City",
+  "state": "MO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032aa"
+  },
+  "key": "KEO01",
+  "name": "Perry Park",
+  "alias": "Walte's Pasture",
+  "city": "Keokuk",
+  "state": "IA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032ab"
+  },
+  "key": "LAS01",
+  "name": "Cashman Field",
+  "city": "Las Vegas",
+  "state": "NV",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032ac"
+  },
+  "key": "LBV01",
+  "name": "The Ballpark at Disney's Wide World",
+  "city": "Lake Buena Vista",
+  "state": "FL",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032ad"
+  },
+  "key": "LON01",
+  "name": "London Stadium",
+  "city": "London",
+  "state": "ENG",
+  "country": "UK"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032ae"
+  },
+  "key": "LOS01",
+  "name": "Los Angeles Memorial Coliseum",
+  "city": "Los Angeles",
+  "state": "CA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032af"
+  },
+  "key": "LOS02",
+  "name": "Wrigley Field",
+  "city": "Los Angeles",
+  "state": "CA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032b0"
+  },
+  "key": "LOS03",
+  "name": "Dodger Stadium",
+  "alias": "Chavez Ravine",
+  "city": "Los Angeles",
+  "state": "CA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032b1"
+  },
+  "key": "LOU01",
+  "name": "Louisville Baseball Park",
+  "city": "Louisville",
+  "state": "KY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032b2"
+  },
+  "key": "LOU02",
+  "name": "Eclipse Park I",
+  "city": "Louisville",
+  "state": "KY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032b3"
+  },
+  "key": "LOU03",
+  "name": "Eclipse Park II",
+  "city": "Louisville",
+  "state": "KY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032b4"
+  },
+  "key": "LOU04",
+  "name": "Eclipse Park III",
+  "city": "Louisville",
+  "state": "KY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032b5"
+  },
+  "key": "LUD01",
+  "name": "Ludlow Baseball Park",
+  "city": "Ludlow",
+  "state": "KY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032b6"
+  },
+  "key": "MAS01",
+  "name": "Long Island Grounds",
+  "city": "Maspeth",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032b7"
+  },
+  "key": "MIA01",
+  "name": "Sun Life Stadium",
+  "alias": "JoeRobbie; ProPlayer; Dolphin; LandShark",
+  "city": "Miami",
+  "state": "FL",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032b8"
+  },
+  "key": "MIA02",
+  "name": "Marlins Park",
+  "city": "Miami",
+  "state": "FL",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032b9"
+  },
+  "key": "MID01",
+  "name": "Mansfield Club Grounds",
+  "city": "Middletown",
+  "state": "CT",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032ba"
+  },
+  "key": "MIL01",
+  "name": "Milwaukee Base-Ball Grounds",
+  "city": "Milwaukee",
+  "state": "WI",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032bb"
+  },
+  "key": "MIL02",
+  "name": "Wright Street Grounds",
+  "city": "Milwaukee",
+  "state": "WI",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032bc"
+  },
+  "key": "MIL03",
+  "name": "Athletic Park",
+  "city": "Milwaukee",
+  "state": "WI",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032bd"
+  },
+  "key": "MIL04",
+  "name": "Lloyd Street Grounds",
+  "city": "Milwaukee",
+  "state": "WI",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032be"
+  },
+  "key": "MIL05",
+  "name": "County Stadium",
+  "city": "Milwaukee",
+  "state": "WI",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032bf"
+  },
+  "key": "MIL06",
+  "name": "Miller Park",
+  "city": "Milwaukee",
+  "state": "WI",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032c0"
+  },
+  "key": "MIN01",
+  "name": "Athletic Park",
+  "city": "Minneapolis",
+  "state": "MN",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032c1"
+  },
+  "key": "MIN02",
+  "name": "Metropolitan Stadium",
+  "city": "Bloomington",
+  "state": "MN",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032c2"
+  },
+  "key": "MIN03",
+  "name": "Hubert H. Humphrey Metrodome",
+  "city": "Minneapolis",
+  "state": "MN",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032c3"
+  },
+  "key": "MIN04",
+  "name": "Target Field",
+  "city": "Minneapolis",
+  "state": "MN",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032c4"
+  },
+  "key": "MNT01",
+  "name": "Estadio Monterrey",
+  "city": "Monterrey",
+  "state": "Nuevo Leon",
+  "country": "MX"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032c5"
+  },
+  "key": "MON01",
+  "name": "Parc Jarry",
+  "alias": "Jarry Park",
+  "city": "Montreal",
+  "state": "QC",
+  "country": "CA"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032c6"
+  },
+  "key": "MON02",
+  "name": "Stade Olympique",
+  "alias": "Olympic Stadium",
+  "city": "Montreal",
+  "state": "QC",
+  "country": "CA"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032c7"
+  },
+  "key": "NEW01",
+  "name": "Howard Avenue Grounds",
+  "alias": "Brewster Park",
+  "city": "New Haven",
+  "state": "CT",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032c8"
+  },
+  "key": "NEW02",
+  "name": "Hamilton Park",
+  "city": "New Haven",
+  "state": "CT",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032c9"
+  },
+  "key": "NEW03",
+  "name": "Geauga Lake Grounds",
+  "alias": "Beyerle's Park",
+  "city": "Geauga Lake",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032ca"
+  },
+  "key": "NWK01",
+  "name": "Wiedenmeyer's Park",
+  "city": "Newark",
+  "state": "NJ",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032cb"
+  },
+  "key": "NYC01",
+  "name": "Union Grounds",
+  "city": "Brooklyn",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032cc"
+  },
+  "key": "NYC02",
+  "name": "Capitoline Grounds",
+  "city": "Brooklyn",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032cd"
+  },
+  "key": "NYC03",
+  "name": "Polo Grounds I (Southeast Diamond)",
+  "city": "New York",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032ce"
+  },
+  "key": "NYC04",
+  "name": "Polo Grounds II (Southwest Diamond)",
+  "city": "New York",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032cf"
+  },
+  "key": "NYC05",
+  "name": "Washington Park I",
+  "city": "Brooklyn",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032d0"
+  },
+  "key": "NYC06",
+  "name": "Metropolitan Park",
+  "city": "New York",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032d1"
+  },
+  "key": "NYC07",
+  "name": "Grauer's Ridgewood Park",
+  "alias": "Ridgewood Park I",
+  "city": "Queens",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032d2"
+  },
+  "key": "NYC08",
+  "name": "Washington Park II",
+  "city": "Brooklyn",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032d3"
+  },
+  "key": "NYC09",
+  "name": "Polo Grounds III",
+  "city": "New York",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032d4"
+  },
+  "key": "NYC10",
+  "name": "Polo Grounds IV",
+  "city": "New York",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032d5"
+  },
+  "key": "NYC11",
+  "name": "Eastern Park",
+  "city": "Brooklyn",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032d6"
+  },
+  "key": "NYC12",
+  "name": "Washington Park III",
+  "city": "Brooklyn",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032d7"
+  },
+  "key": "NYC13",
+  "name": "Hilltop Park",
+  "city": "New York",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032d8"
+  },
+  "key": "NYC14",
+  "name": "Polo Grounds V",
+  "city": "New York",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032d9"
+  },
+  "key": "NYC15",
+  "name": "Ebbets Field",
+  "city": "Brooklyn",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032da"
+  },
+  "key": "NYC16",
+  "name": "Yankee Stadium I",
+  "city": "New York",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032db"
+  },
+  "key": "NYC17",
+  "name": "Shea Stadium",
+  "alias": "William A. Shea Stadium",
+  "city": "New York",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032dc"
+  },
+  "key": "NYC18",
+  "name": "Wallace's Ridgewood Park",
+  "alias": "Ridgewood Park II",
+  "city": "Queens",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032dd"
+  },
+  "key": "NYC19",
+  "name": "Washington Park IV",
+  "city": "Brooklyn",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032de"
+  },
+  "key": "NYC20",
+  "name": "Citi Field",
+  "city": "New York",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032df"
+  },
+  "key": "NYC21",
+  "name": "Yankee Stadium II",
+  "city": "New York",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032e0"
+  },
+  "key": "OAK01",
+  "name": "Oakland-Alameda County Coliseum",
+  "alias": "Network Associates Coliseum",
+  "city": "Oakland",
+  "state": "CA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032e1"
+  },
+  "key": "OMA01",
+  "name": "TD Ameritrade Park",
+  "city": "Omaha",
+  "state": "NE",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032e2"
+  },
+  "key": "PEN01",
+  "name": "East End Park",
+  "alias": "Pendleton Park",
+  "city": "Cincinnati",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032e3"
+  },
+  "key": "PHI01",
+  "name": "Jefferson Street Grounds",
+  "alias": "Athletics Park",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032e4"
+  },
+  "key": "PHI02",
+  "name": "Centennial Park",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032e5"
+  },
+  "key": "PHI03",
+  "name": "Oakdale Park",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032e6"
+  },
+  "key": "PHI04",
+  "name": "Recreation Park",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032e7"
+  },
+  "key": "PHI05",
+  "name": "Keystone Park",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032e8"
+  },
+  "key": "PHI06",
+  "name": "Huntingdon Grounds I",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032e9"
+  },
+  "key": "PHI07",
+  "name": "Forepaugh Park",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032ea"
+  },
+  "key": "PHI08",
+  "name": "University of Penn. Athletic Field",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032eb"
+  },
+  "key": "PHI09",
+  "name": "Baker Bowl",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032ec"
+  },
+  "key": "PHI10",
+  "name": "Columbia Park",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032ed"
+  },
+  "key": "PHI11",
+  "name": "Shibe Park",
+  "alias": "Connie Mack Stadium",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032ee"
+  },
+  "key": "PHI12",
+  "name": "Veterans Stadium",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032ef"
+  },
+  "key": "PHI13",
+  "name": "Citizens Bank Park",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032f0"
+  },
+  "key": "PHI14",
+  "name": "Huntingdon Grounds II",
+  "city": "Philadelphia",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032f1"
+  },
+  "key": "PHO01",
+  "name": "Chase Field",
+  "alias": "Bank One Ballpark",
+  "city": "Phoenix",
+  "state": "AZ",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032f2"
+  },
+  "key": "PIT01",
+  "name": "Union Park",
+  "city": "Pittsburgh",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032f3"
+  },
+  "key": "PIT02",
+  "name": "Exposition Park I",
+  "alias": "Lower Field",
+  "city": "Pittsburgh",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032f4"
+  },
+  "key": "PIT03",
+  "name": "Exposition Park II",
+  "alias": "Upper Field",
+  "city": "Pittsburgh",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032f5"
+  },
+  "key": "PIT04",
+  "name": "Recreation Park",
+  "city": "Pittsburgh",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032f6"
+  },
+  "key": "PIT05",
+  "name": "Exposition Park III",
+  "city": "Pittsburgh",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032f7"
+  },
+  "key": "PIT06",
+  "name": "Forbes Field",
+  "city": "Pittsburgh",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032f8"
+  },
+  "key": "PIT07",
+  "name": "Three Rivers Stadium",
+  "city": "Pittsburgh",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032f9"
+  },
+  "key": "PIT08",
+  "name": "PNC Park",
+  "city": "Pittsburgh",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032fa"
+  },
+  "key": "PRO01",
+  "name": "Adelaide Avenue Grounds",
+  "city": "Providence",
+  "state": "RI",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032fb"
+  },
+  "key": "PRO02",
+  "name": "Messer Street Grounds",
+  "city": "Providence",
+  "state": "RI",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032fc"
+  },
+  "key": "RCK01",
+  "name": "Agricultural Society Fair Grounds",
+  "city": "Rockford",
+  "state": "IL",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032fd"
+  },
+  "key": "RIC01",
+  "name": "Richmond Fair Grounds",
+  "city": "Richmond",
+  "state": "VA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032fe"
+  },
+  "key": "RIC02",
+  "name": "Allens Pasture",
+  "city": "Richmond",
+  "state": "VA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c826032ff"
+  },
+  "key": "ROC01",
+  "name": "Culver Field I",
+  "city": "Rochester",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603300"
+  },
+  "key": "ROC02",
+  "name": "Culver Field II",
+  "city": "Rochester",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603301"
+  },
+  "key": "ROC03",
+  "name": "Ontario Beach Grounds",
+  "city": "Rochester",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603302"
+  },
+  "key": "SAI01",
+  "name": "St. George Cricket Grounds",
+  "city": "New York",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603303"
+  },
+  "key": "SAN01",
+  "name": "Qualcomm Stadium",
+  "alias": "San Diego/Jack Murphy Stadium",
+  "city": "San Diego",
+  "state": "CA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603304"
+  },
+  "key": "SAN02",
+  "name": "PETCO Park",
+  "city": "San Diego",
+  "state": "CA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603305"
+  },
+  "key": "SEA01",
+  "name": "Sick's Stadium",
+  "city": "Seattle",
+  "state": "WA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603306"
+  },
+  "key": "SEA02",
+  "name": "Kingdome",
+  "city": "Seattle",
+  "state": "WA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603307"
+  },
+  "key": "SEA03",
+  "name": "Safeco Field",
+  "alias": "T-Mobile Park",
+  "city": "Seattle",
+  "state": "WA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603308"
+  },
+  "key": "SFO01",
+  "name": "Seals Stadium",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603309"
+  },
+  "key": "SFO02",
+  "name": "Candlestick Park",
+  "alias": "3Com Park",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260330a"
+  },
+  "key": "SFO03",
+  "name": "AT&T Park",
+  "alias": "Pacific Bell Park; SBC Park",
+  "city": "San Francisco",
+  "state": "CA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260330b"
+  },
+  "key": "SJU01",
+  "name": "Estadio Hiram Bithorn",
+  "city": "San Juan",
+  "country": "PR"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260330c"
+  },
+  "key": "SPR01",
+  "name": "Hampden Park Race Track",
+  "alias": "Springfield Track",
+  "city": "Springfield",
+  "state": "MA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260330d"
+  },
+  "key": "STL01",
+  "name": "Red Stockings Base Ball Park",
+  "city": "St. Louis",
+  "state": "MO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260330e"
+  },
+  "key": "STL02",
+  "name": "Grand Avenue Park",
+  "city": "St. Louis",
+  "state": "MO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260330f"
+  },
+  "key": "STL03",
+  "name": "Sportsman's Park I",
+  "city": "St. Louis",
+  "state": "MO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603310"
+  },
+  "key": "STL04",
+  "name": "Union Grounds",
+  "city": "St. Louis",
+  "state": "MO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603311"
+  },
+  "key": "STL05",
+  "name": "Robison Field",
+  "city": "St. Louis",
+  "state": "MO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603312"
+  },
+  "key": "STL06",
+  "name": "Sportsman's Park II",
+  "city": "St. Louis",
+  "state": "MO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603313"
+  },
+  "key": "STL07",
+  "name": "Sportsman's Park III",
+  "alias": "Busch Stadium I",
+  "city": "St. Louis",
+  "state": "MO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603314"
+  },
+  "key": "STL08",
+  "name": "Handlan's Park",
+  "alias": "Federal League Park",
+  "city": "St. Louis",
+  "state": "MO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603315"
+  },
+  "key": "STL09",
+  "name": "Busch Stadium II",
+  "city": "St. Louis",
+  "state": "MO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603316"
+  },
+  "key": "STL10",
+  "name": "Busch Stadium III",
+  "city": "St. Louis",
+  "state": "MO",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603317"
+  },
+  "key": "STP01",
+  "name": "Tropicana Field",
+  "city": "St. Petersburg",
+  "state": "FL",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603318"
+  },
+  "key": "SYD01",
+  "name": "Sydney Cricket Ground",
+  "city": "Sydney",
+  "state": "New South Wales",
+  "country": "AU"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603319"
+  },
+  "key": "SYR01",
+  "name": "Star Park I",
+  "alias": "Newell Park",
+  "city": "Syracuse",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260331a"
+  },
+  "key": "SYR02",
+  "name": "Star Park II",
+  "city": "Syracuse",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260331b"
+  },
+  "key": "SYR03",
+  "name": "Iron Pier",
+  "city": "Syracuse",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260331c"
+  },
+  "key": "THR01",
+  "name": "Three Rivers Park",
+  "city": "Three Rivers",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260331d"
+  },
+  "key": "TOK01",
+  "name": "Tokyo Dome",
+  "city": "Tokyo",
+  "state": "Tokyo",
+  "country": "JP"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260331e"
+  },
+  "key": "TOL01",
+  "name": "League Park",
+  "city": "Toledo",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260331f"
+  },
+  "key": "TOL02",
+  "name": "Tri-State Fair Grounds",
+  "city": "Toledo",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603320"
+  },
+  "key": "TOL03",
+  "name": "Speranza Park",
+  "city": "Toledo",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603321"
+  },
+  "key": "TOL04",
+  "name": "Armory Park",
+  "city": "Toledo",
+  "state": "OH",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603322"
+  },
+  "key": "TOR01",
+  "name": "Exhibition Stadium",
+  "city": "Toronto",
+  "state": "ON",
+  "country": "CA"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603323"
+  },
+  "key": "TOR02",
+  "name": "Rogers Centre",
+  "alias": "Skydome",
+  "city": "Toronto",
+  "state": "ON",
+  "country": "CA"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603324"
+  },
+  "key": "TRO01",
+  "name": "Haymakers' Grounds",
+  "city": "Troy",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603325"
+  },
+  "key": "TRO02",
+  "name": "Putnam Grounds",
+  "city": "Troy",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603326"
+  },
+  "key": "WAR01",
+  "name": "Rocky Point Park",
+  "city": "Warwick",
+  "state": "RI",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603327"
+  },
+  "key": "WAS01",
+  "name": "Olympic Grounds",
+  "city": "Washington",
+  "state": "DC",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603328"
+  },
+  "key": "WAS02",
+  "name": "National Grounds",
+  "city": "Washington",
+  "state": "DC",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603329"
+  },
+  "key": "WAS03",
+  "name": "Capitol Grounds",
+  "city": "Washington",
+  "state": "DC",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260332a"
+  },
+  "key": "WAS04",
+  "name": "Athletic Park",
+  "city": "Washington",
+  "state": "DC",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260332b"
+  },
+  "key": "WAS05",
+  "name": "Swampoodle Grounds",
+  "city": "Washington",
+  "state": "DC",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260332c"
+  },
+  "key": "WAS06",
+  "name": "Boundary Field",
+  "city": "Washington",
+  "state": "DC",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260332d"
+  },
+  "key": "WAS07",
+  "name": "American League Park I",
+  "city": "Washington",
+  "state": "DC",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260332e"
+  },
+  "key": "WAS08",
+  "name": "American League Park II",
+  "city": "Washington",
+  "state": "DC",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260332f"
+  },
+  "key": "WAS09",
+  "name": "Griffith Stadium",
+  "city": "Washington",
+  "state": "DC",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603330"
+  },
+  "key": "WAS10",
+  "name": "Robert F. Kennedy Stadium",
+  "alias": "D.C. Stadium",
+  "city": "Washington",
+  "state": "DC",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603331"
+  },
+  "key": "WAS11",
+  "name": "Nationals Park",
+  "city": "Washington",
+  "state": "DC",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603332"
+  },
+  "key": "WAT01",
+  "name": "Troy Ball Club Grounds",
+  "city": "Watervliet",
+  "state": "NY",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603333"
+  },
+  "key": "WAV01",
+  "name": "Waverly Fairgrounds",
+  "city": "Waverly",
+  "state": "NJ",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603334"
+  },
+  "key": "WEE01",
+  "name": "Monitor Grounds",
+  "city": "Weehawken",
+  "state": "NJ",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603335"
+  },
+  "key": "WHE01",
+  "name": "Island Grounds",
+  "city": "Wheeling",
+  "state": "WV",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603336"
+  },
+  "key": "WIL01",
+  "name": "Union Street Park",
+  "city": "Wilmington",
+  "state": "DE",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603337"
+  },
+  "key": "WIL02",
+  "name": "BB&T Ballpark at Bowman Field",
+  "city": "Williamsport",
+  "state": "PA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603338"
+  },
+  "key": "WNY01",
+  "name": "West New York Field Club Grounds",
+  "city": "West New York",
+  "state": "NJ",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c82603339"
+  },
+  "key": "WOR01",
+  "name": "Agricultural County Fair Grounds I",
+  "city": "Worcester",
+  "state": "MA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260333a"
+  },
+  "key": "WOR02",
+  "name": "Agricultural County Fair Grounds II",
+  "city": "Worcester",
+  "state": "MA",
+  "country": "US"
+},{
+  "_id": {
+    "$oid": "6228e1919604c61c8260333b"
+  },
+  "key": "WOR03",
+  "name": "Worcester Driving Park Grounds",
+  "city": "Worcester",
+  "state": "MA",
+  "country": "US"
+}]
