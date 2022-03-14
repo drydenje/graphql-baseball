@@ -11,11 +11,10 @@ mongoose.connect(
     useUnifiedTopology: true,
   }
 );
-const db = mongoose.connection;
-// console.log(parks.mdbSchema);
 
-// This is returning 'undefined', not sure why. It console.logs fine in typeDef.js
-// console.log(parks.mdbSchema);
+const db = mongoose.connection;
+
+// console.log(parks.mPark);
 
 // const Park = mongoose.model("Park", parks.mdbSchema);
 
@@ -23,11 +22,11 @@ const typeDef = gql`
   type Query
 `;
 
-const server = new ApolloServer({
-  typeDefs: [typeDef, players.typeDef, parks.typeDef],
-  resolvers: [players.resolvers, parks.resolvers],
-  playground: true,
-});
+// const server = new ApolloServer({
+//   typeDefs: [typeDef, players.typeDef, parks.typeDef],
+//   resolvers: [players.resolvers, parks.resolvers],
+//   playground: true,
+// });
 
 // db.on("error", console.error.bind(console, "connection error:"));
 // db.once("open", function () {
