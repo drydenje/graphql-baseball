@@ -13,7 +13,10 @@ mongoose.connect(
 );
 const db = mongoose.connection;
 // console.log(parks.mdbSchema);
+
+// This is returning 'undefined', not sure why. It console.logs fine in typeDef.js
 // console.log(parks.mdbSchema);
+
 // const Park = mongoose.model("Park", parks.mdbSchema);
 
 const typeDef = gql`
