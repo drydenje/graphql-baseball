@@ -1,4 +1,5 @@
 const { gql } = require("apollo-server");
+const { Schema } = require("mongoose");
 
 const typeDef = gql`
   type Park {
@@ -15,6 +16,15 @@ const typeDef = gql`
   }
 `;
 
+const mdbSchema = new Schema({
+  key: String,
+  name: String,
+  city: String,
+  state: String,
+  country: String,
+});
+
 module.exports = {
   typeDef,
+  mdbSchema,
 };
