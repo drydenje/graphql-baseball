@@ -1,6 +1,6 @@
-const { Schema, model } = require("mongoose");
+const mongoose = require("mongoose");
 
-const parkSchema = new Schema({
+const schema = new mongoose.Schema({
   key: String,
   name: String,
   city: String,
@@ -8,8 +8,8 @@ const parkSchema = new Schema({
   country: String,
 });
 
-const mPark = model("Park", parkSchema);
-console.log(mPark);
+const model = mongoose.model("Park", schema);
+
 module.exports = {
-  mPark,
+  model,
 };
