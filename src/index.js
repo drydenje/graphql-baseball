@@ -6,14 +6,10 @@ const parks = require("./Parks");
 
 // console.log(parks.model);
 
-const typeDef = gql`
-  type Query
-`;
-
-connectDB();
+// connectDB();
 
 const server = new ApolloServer({
-  typeDefs: [typeDef, players.typeDef, parks.typeDef],
+  typeDefs: [players.typeDef, parks.typeDef],
   resolvers: [players.resolvers, parks.resolvers],
   playground: true,
 });

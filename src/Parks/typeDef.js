@@ -11,8 +11,9 @@ const typeDef = gql`
     country: String
   }
 
-  extend type Query {
+  type Query {
     parks: [Park]
+    park(key: ID): Park
   }
 `;
 
