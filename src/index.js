@@ -6,7 +6,7 @@ const parks = require("./Parks");
 
 // console.log(parks.model);
 
-// connectDB();
+connectDB();
 
 const server = new ApolloServer({
   typeDefs: [players.typeDef, parks.typeDef],

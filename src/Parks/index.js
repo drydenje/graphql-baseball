@@ -9,5 +9,5 @@ module.exports = {
   Park,
   resolvers,
   typeDef,
-  model,
+  // model,
 };
