@@ -10,8 +10,13 @@ const typeDef = gql`
     country: String
   }
 
-  extend type Query {
+  type Query {
     parks: [Park]
+    park(key: ID): Park
+    parksByName(name: String): [Park]
+    parksByCity(city: String): [Park]
+    parksByState(state: String): [Park]
+    parksByCountry(country: String): [Park]
   }
 `;
 
