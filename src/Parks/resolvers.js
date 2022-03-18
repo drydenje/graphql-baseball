@@ -5,7 +5,10 @@ const resolvers = {
     parks: () => Park.all(),
     // obj, args, context, info
     park: (obj, { key }, context, info) => {
-      return Park.byKey(key);
+      return Park.searchByKey(key);
+    },
+    parksInCity: (obj, { city }, context, info) => {
+      return Park.searchByCity(city);
     },
   },
 };

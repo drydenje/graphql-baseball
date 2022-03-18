@@ -14,6 +14,7 @@ const typeDef = gql`
   type Query {
     parks: [Park]
     park(key: ID): Park
+    parksInCity(city: String): [Park]
   }
 `;
 
