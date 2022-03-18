@@ -1,5 +1,4 @@
 const { gql } = require("apollo-server");
-const { Schema } = require("mongoose");
 
 const typeDef = gql`
   type Park {
@@ -14,7 +13,10 @@ const typeDef = gql`
   type Query {
     parks: [Park]
     park(key: ID): Park
-    parksInCity(city: String): [Park]
+    parksByName(name: String): [Park]
+    parksByCity(city: String): [Park]
+    parksByState(state: String): [Park]
+    parksByCountry(country: String): [Park]
   }
 `;
 

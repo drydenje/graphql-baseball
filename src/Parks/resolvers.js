@@ -7,8 +7,17 @@ const resolvers = {
     park: (obj, { key }, context, info) => {
       return Park.searchByKey(key);
     },
-    parksInCity: (obj, { city }, context, info) => {
+    parksByName: (obj, { name }, context, info) => {
+      return Park.searchByName(name);
+    },
+    parksByCity: (obj, { city }, context, info) => {
       return Park.searchByCity(city);
+    },
+    parksByState: (obj, { state }, context, info) => {
+      return Park.searchByState(state);
+    },
+    parksByCountry: (obj, { country }, context, info) => {
+      return Park.searchByCountry(country);
     },
   },
 };

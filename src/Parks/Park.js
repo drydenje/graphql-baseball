@@ -22,10 +22,17 @@ class Park {
 
   static async searchByKey(key) {
     try {
-      // const foundPark = await model.findById("6228e1919604c61c8260323e");
-      // const foundPark = await model.find();
       const foundPark = await model.findOne({ key: key });
       return foundPark;
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
+
+  static async searchByName(name) {
+    try {
+      const foundName = await model.find({ name: name });
+      return foundName;
     } catch (error) {
       console.error("Error:", error);
     }
@@ -35,6 +42,24 @@ class Park {
     try {
       const foundParks = await model.find({ city: city });
       return foundParks;
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
+
+  static async searchByState(state) {
+    try {
+      const foundState = await model.find({ state: state });
+      return foundState;
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
+
+  static async searchByCountry(country) {
+    try {
+      const foundCountry = await model.find({ country: country });
+      return foundCountry;
     } catch (error) {
       console.error("Error:", error);
     }
