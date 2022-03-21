@@ -2,7 +2,6 @@ const { gql } = require("apollo-server");
 
 const typeDef = gql`
   type Park {
-    # _id: String
     key: String
     name: String
     city: String
@@ -10,7 +9,7 @@ const typeDef = gql`
     country: String
   }
 
-  type Query {
+  extend type Query {
     parks: [Park]
     park(key: ID): Park
     parksByName(name: String): [Park]
