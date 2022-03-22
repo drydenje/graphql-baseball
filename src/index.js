@@ -1,9 +1,10 @@
 require("dotenv").config();
 const { ApolloServer, gql } = require("apollo-server");
 const connectDB = require("./config/db");
-const players = require("./Players");
-const parks = require("./Parks");
 const appearances = require("./Appearances");
+const franchises = require("./Franchises");
+const parks = require("./Parks");
+const players = require("./Players");
 
 const typeDef = gql`
   type Query
@@ -12,8 +13,19 @@ const typeDef = gql`
 connectDB();
 
 const server = new ApolloServer({
-  typeDefs: [typeDef, appearances.typeDef, parks.typeDef, players.typeDef],
-  resolvers: [appearances.resolvers, parks.resolvers, players.resolvers],
+  typeDefs: [
+    typeDef,
+    appearances.typeDef,
+    franchises.typeDef,
+    parks.typeDef,
+    players.typeDef,
+  ],
+  resolvers: [
+    appearances.resolvers,
+    franchises.resolvers,
+    parks.resolvers,
+    players.resolvers,
+  ],
   playground: true,
 });
 
