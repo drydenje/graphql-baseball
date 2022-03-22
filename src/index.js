@@ -3,6 +3,7 @@ const { ApolloServer, gql } = require("apollo-server");
 const connectDB = require("./config/db");
 const players = require("./Players");
 const parks = require("./Parks");
+const appearances = require("./Appearances");
 
 const typeDef = gql`
   type Query
@@ -11,8 +12,8 @@ const typeDef = gql`
 connectDB();
 
 const server = new ApolloServer({
-  typeDefs: [typeDef, players.typeDef, parks.typeDef],
-  resolvers: [players.resolvers, parks.resolvers],
+  typeDefs: [typeDef, appearances.typeDef, parks.typeDef, players.typeDef],
+  resolvers: [appearances.resolvers, parks.resolvers, players.resolvers],
   playground: true,
 });
 
