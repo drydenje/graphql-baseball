@@ -4,6 +4,7 @@ const typeDef = gql`
   type Appearance {
     yearID: Int
     teamID: String
+    team: Franchise
     lgID: String #leagueID
     playerID: String
     G_all: Int
@@ -28,6 +29,7 @@ const typeDef = gql`
   extend type Query {
     # appearances: [Appearance]
     appearancesByPlayer(id: ID): [Appearance]
+    # team: Franchise
   }
 `;
 

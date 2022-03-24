@@ -11,8 +11,9 @@ const typeDef = gql`
 
   extend type Query {
     franchises: [Franchise]
-    franchise(key: ID): Franchise
+    franchise(id: ID): Franchise
     activeFranchises: [Franchise]
+    team(id: ID!): Franchise
   }
 `;
 

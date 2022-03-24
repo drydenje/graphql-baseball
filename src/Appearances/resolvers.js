@@ -1,4 +1,5 @@
 const { Appearance } = require("./Appearance");
+// const { Franchise } = require("../Franchises/Franchise");
 
 const resolvers = {
   Query: {
