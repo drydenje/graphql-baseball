@@ -29,7 +29,7 @@ const typeDef = gql`
   extend type Query {
     # appearances: [Appearance]
     appearancesByPlayer(id: ID): [Appearance]
-    # team: Franchise
+    team(id: ID): Franchise
   }
 `;
 

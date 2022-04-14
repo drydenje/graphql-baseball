@@ -13,7 +13,7 @@ const typeDef = gql`
     franchises: [Franchise]
     franchise(id: ID): Franchise
     activeFranchises: [Franchise]
-    team(id: ID!): Franchise
+    # team(id: ID!): Franchise
   }
 `;
 
