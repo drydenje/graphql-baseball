@@ -19,9 +19,9 @@ class Franchise {
     }
   }
 
-  static async franchise(id) {
+  static async searchByID(id) {
     try {
-      const foundFranchise = await model.find({ franchID: id });
+      const foundFranchise = await model.findOne({ franchID: id });
       return foundFranchise;
     } catch (error) {
       console.error("Error:", error);
