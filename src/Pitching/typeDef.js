@@ -35,8 +35,8 @@ const typeDef = gql`
   }
 
   extend type Query {
-    allStatlines: [Pitching]
-    careerStats(id: ID): [Pitching]
+    # allPitchingStats: [Pitching]
+    careerPitchingStats(playerID: ID): [Pitching]
   }
 `;
 
