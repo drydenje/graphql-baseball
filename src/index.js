@@ -2,6 +2,7 @@ require("dotenv").config();
 const { ApolloServer, gql } = require("apollo-server");
 const connectDB = require("./config/db");
 const appearances = require("./Appearances");
+const batting = require("./Batting");
 const franchises = require("./Franchises");
 const parks = require("./Parks");
 const players = require("./Players");
@@ -16,12 +17,14 @@ const server = new ApolloServer({
   typeDefs: [
     typeDef,
     appearances.typeDef,
+    batting.typeDef,
     franchises.typeDef,
     parks.typeDef,
     players.typeDef,
   ],
   resolvers: [
     appearances.resolvers,
+    batting.resolvers,
     franchises.resolvers,
     parks.resolvers,
     players.resolvers,
