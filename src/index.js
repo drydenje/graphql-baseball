@@ -5,6 +5,7 @@ const appearances = require("./Appearances");
 const batting = require("./Batting");
 const franchises = require("./Franchises");
 const parks = require("./Parks");
+const pitching = require("./Pitching");
 const players = require("./Players");
 
 const typeDef = gql`
@@ -20,6 +21,7 @@ const server = new ApolloServer({
     batting.typeDef,
     franchises.typeDef,
     parks.typeDef,
+    pitching.typeDef,
     players.typeDef,
   ],
   resolvers: [
@@ -27,6 +29,7 @@ const server = new ApolloServer({
     batting.resolvers,
     franchises.resolvers,
     parks.resolvers,
+    pitching.resolvers,
     players.resolvers,
   ],
   playground: true,
