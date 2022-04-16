@@ -7,27 +7,27 @@ const typeDef = gql`
     stint: Int
     teamID: String
     lgID: String
-    G: Int
-    AB:Int
-    R:Int
-    H:Int
-    2B:Int
-    3B:Int
-    HR:Int
-    RBI:Int
-    SB:Int
-    CS:Int
-    BB:Int
-    SO:Int
-    IBB:Int
-    HBP:Int
-    SH:Int
-    SF:Int
-    GIDP:Int
+    iG: Int
+    iAB: Int
+    iR: Int
+    iH: Int
+    i2B: Int
+    i3B: Int
+    iHR: Int
+    iRBI: Int
+    iSB: Int
+    iCS: Int
+    iBB: Int
+    iSO: Int
+    iIBB: Int
+    iHBP: Int
+    iSH: Int
+    iSF: Int
+    iGIDP: Int
   }
 
   extend type Query {
-    # statline(year: Int): 
+    allStatlines: [Batting]
     careerStats(id: ID): [Batting]
   }
 `;
