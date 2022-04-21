@@ -52,7 +52,7 @@ class Lookup {
   static async lookupByYahooID(id) {
     try {
       const foundPlayer = await model.findOne({ YAHOOID: id });
-      console.log(foundPlayer.IDPLAYER);
+      // console.log(foundPlayer.IDPLAYER);
       return foundPlayer.IDPLAYER;
     } catch (error) {
       console.error("Error:", error);

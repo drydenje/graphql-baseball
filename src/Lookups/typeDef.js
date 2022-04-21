@@ -24,7 +24,7 @@ const typeDef = gql`
   }
 
   extend type Query {
-    lookupByYahooID(id: String): Player
+    lookupByYahooID(id: String!): String
   }
 `;
 
