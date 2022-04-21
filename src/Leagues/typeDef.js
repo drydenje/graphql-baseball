@@ -2,7 +2,51 @@ const { gql } = require("apollo-server");
 
 const typeDef = gql`
   type League {
+    id: ID
+    teams: [Team]
+    rosterPositions: [RosterPosition]
+    statCategories: [Stat]
+  }
 
+  type Team {
+    id: ID
+    name: String
+    img: String
+    url: String
+    managers: [Manager]
+  }
+
+  type Manager {
+    id: ID
+    nickname: String
+    is_commissioner: Int
+    teamID: ID
+  }
+
+  type RosterPosition {
+    position: String
+    positionType: String
+    count: Int
+  }
+
+  type Pick {
+    id: ID
+    playerID: String
+    teamID: String
+    pos: String
+    cost: Int
+  }
+
+  type Stat {
+    id: ID
+    name: String
+    displayName: String
+    modifier: Float
+    sortOrder: Int
+    positionTypes: [String]
+    operator: String
+    decimalPoints: Int
+    isCompositeStat: Int
   }
 
   extend type Query {
@@ -12,66 +56,4 @@ const typeDef = gql`
 
 module.exports = {
   typeDef,
-};
-
-const league = {
-  leagueID,
-  teams: [],
-  roster_positions: [
-    {
-      position: "C",
-      position_type: "B",
-      count: 1,
-    },
-    {
-      position: "1B",
-      position_type: "B",
-      count: 1,
-    },
-    {
-      position: "2B",
-      position_type: "B",
-      count: 1,
-    },
-    {
-      position: "3B",
-      position_type: "B",
-      count: 1,
-    },
-    {
-      position: "SS",
-      position_type: "B",
-      count: 1,
-    },
-    {
-      position: "OF",
-      position_type: "B",
-      count: 3,
-    },
-    {
-      position: "Util",
-      position_type: "B",
-      count: 2,
-    },
-    {
-      position: "SP",
-      position_type: "P",
-      count: 2,
-    },
-    {
-      position: "RP",
-      position_type: "P",
-      count: 2,
-    },
-    {
-      position: "P",
-      position_type: "P",
-      count: 4,
-    },
-    {
-      position: "BN",
-      position_type: "BN",
-      count: 5,
-    },
-  ],
 };
