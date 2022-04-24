@@ -50,7 +50,11 @@ const typeDef = gql`
   }
 
   extend type Query {
+    league(leagueID: ID): [Team]
+  }
 
+  type Mutation {
+    addLeague(): League
   }
 `;
 
