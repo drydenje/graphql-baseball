@@ -13,6 +13,14 @@ class League {
       console.error("Error:", error);
     }
   }
+
+  static async createLeague(id, name, teams, positions, stats) {
+    try {
+      // insert a new league
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
 }
 
 module.exports = {
