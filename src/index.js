@@ -4,6 +4,7 @@ const connectDB = require("./config/db");
 const appearances = require("./Appearances");
 const batting = require("./Batting");
 const franchises = require("./Franchises");
+const league = require("./Leagues");
 const lookups = require("./Lookups");
 const parks = require("./Parks");
 const pitching = require("./Pitching");
@@ -21,6 +22,7 @@ const server = new ApolloServer({
     appearances.typeDef,
     batting.typeDef,
     franchises.typeDef,
+    league.typeDef,
     lookups.typeDef,
     parks.typeDef,
     pitching.typeDef,
@@ -30,6 +32,7 @@ const server = new ApolloServer({
     appearances.resolvers,
     batting.resolvers,
     franchises.resolvers,
+    league.resolvers,
     lookups.resolvers,
     parks.resolvers,
     pitching.resolvers,
