@@ -1,20 +1,35 @@
 const mongoose = require("mongoose");
 
+const PositionSchema = new mongoose.Schema({
+  position: String,
+  positionType: String,
+  count: Number,
+});
+
 const schema = new mongoose.Schema({
-  id: String,
+  leagueId: String,
   name: String,
   // teams: [String],
-  // positions: [String],
+  positions: [PositionSchema],
   // stats: [String],
 });
 
 const model = mongoose.model("League", schema);
 
 class League {
+  static async all() {
+    try {
+      const allLeagues = await model.find();
+      return allLeagues;
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
+
   static async getLeague(id) {
     try {
-      const foundLeague = await model.find({ leagueID: id });
-      return [foundLeague];
+      const foundLeague = await model.findOne({ leagueId: id });
+      return foundLeague;
     } catch (error) {
       console.error("Error:", error);
     }

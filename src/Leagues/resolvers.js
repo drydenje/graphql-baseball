@@ -2,6 +2,7 @@ const { League } = require("./League");
 
 const resolvers = {
   Query: {
+    leagues: () => League.all(),
     getLeague: (obj, { id }, context, info) => {
       return League.getLeague(id);
     },
