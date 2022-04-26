@@ -4,14 +4,14 @@ const typeDef = gql`
   type League {
     leagueId: ID
     name: String
-    teams: [Team]
+    team_list: [Team]
     rosterPositions: [RosterPosition]
     statCategories: [Stat]
   }
 
   type Team {
     id: ID
-    name: String
+    teamname: String
     img: String
     url: String
     managers: [Manager]
