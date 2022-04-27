@@ -5,8 +5,8 @@ const typeDef = gql`
     leagueId: ID
     name: String
     team_list: [Team]
-    rosterPositions: [RosterPosition]
-    statCategories: [Stat]
+    roster_positions: [RosterPosition]
+    stat_categories: [Stat]
   }
 
   type Team {
@@ -39,15 +39,15 @@ const typeDef = gql`
   # }
 
   type Stat {
-    id: ID
+    stat_id: ID
     name: String
-    displayName: String
-    modifier: Float
-    sortOrder: Int
-    positionTypes: [String]
+    display_name: String
+    stat_modifier: Float
+    sort_order: Int
+    stat_position_types: [String]
     operator: String
-    decimalPoints: Int
-    isCompositeStat: Int
+    decimal_points: Int
+    is_composite_stat: Int
   }
 
   extend type Query {

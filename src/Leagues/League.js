@@ -37,14 +37,14 @@ const schema = new mongoose.Schema({
   //     default: null,
   //   },
   // ],
-  // positions: [
-  //   {
-  //     position: String,
-  //     positionType: String,
-  //     count: Number,
-  //   },
-  // ],
-  stats: [
+  roster_positions: [
+    {
+      position: String,
+      positionType: String,
+      count: Number,
+    },
+  ],
+  stat_categories: [
     {
       stat_id: Number,
       name: String,
