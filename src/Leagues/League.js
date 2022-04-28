@@ -31,17 +31,10 @@ const schema = new mongoose.Schema({
       away: Boolean,
     },
   ],
-  // positions: [
-  //   {
-  //     type: PositionSchema,
-  //     default: null,
-  //   },
-  // ],
   roster_positions: [
     {
-      position: String,
-      positionType: String,
-      count: Number,
+      type: PositionSchema,
+      default: null,
     },
   ],
   stat_categories: [
