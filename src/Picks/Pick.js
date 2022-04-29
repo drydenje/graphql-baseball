@@ -1,9 +1,3 @@
-// static async addPick(id, playerId, teamId, leagueId, pos, cost) {
-//     try {
-//       // add the pick here
-//     }
-//   }
-
 const mongoose = require("mongoose");
 
 const schema = new mongoose.Schema({
@@ -44,8 +38,10 @@ class Pick {
       console.error("Error:", error);
     }
   }
-}
 
-//     listTeam: (obj, { id }, context, info) => {
-//       return Pick.listTeam(teamId);
-// },
+  static async addPick(id, playerId, teamId, leagueId, pos, cost) {
+      try {
+        // add the pick here
+      }
+    }
+}
