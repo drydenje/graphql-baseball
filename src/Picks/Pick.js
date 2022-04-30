@@ -40,8 +40,11 @@ class Pick {
   }
 
   static async addPick(id, playerId, teamId, leagueId, pos, cost) {
-      try {
-        // add the pick here
-      }
+    try {
+      Pick.create({ id, playerId, teamId, leagueId, pos, cost });
+      return this.searchPickById(id);
+    } catch (error) {
+      console.error("Error:", error);
     }
+  }
 }

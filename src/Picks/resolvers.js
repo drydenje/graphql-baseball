@@ -10,6 +10,16 @@ const resolvers = {
       return Pick.listTeam(teamId);
     },
   },
+  Mutation: {
+    addPick: (
+      obj,
+      { id, playerId, teamId, leagueId, pos, cost },
+      context,
+      info
+    ) => {
+      return Pick.addPick(id, playerId, teamId, leagueId, pos, cost);
+    },
+  },
 };
 
 module.exports = {

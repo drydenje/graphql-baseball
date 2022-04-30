@@ -16,7 +16,18 @@ const typeDef = gql`
     listTeam(teamId: ID): [Pick]
   }
 
-  # type Mutation {
-  #   addPick():
-  # }
+  type Mutation {
+    addPick(
+      id: ID
+      playerId: ID
+      teamId: ID
+      leagueId: ID
+      pos: String
+      cost: Int
+    ): Pick
+  }
 `;
+
+module.exports = {
+  typeDef,
+};

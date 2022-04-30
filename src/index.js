@@ -7,6 +7,7 @@ const franchises = require("./Franchises");
 const league = require("./Leagues");
 const lookups = require("./Lookups");
 const parks = require("./Parks");
+const picks = require("./Picks");
 const pitching = require("./Pitching");
 const players = require("./Players");
 
@@ -25,6 +26,7 @@ const server = new ApolloServer({
     league.typeDef,
     lookups.typeDef,
     parks.typeDef,
+    picks.typeDef,
     pitching.typeDef,
     players.typeDef,
   ],
@@ -35,6 +37,7 @@ const server = new ApolloServer({
     league.resolvers,
     lookups.resolvers,
     parks.resolvers,
+    picks.resolvers,
     pitching.resolvers,
     players.resolvers,
   ],
