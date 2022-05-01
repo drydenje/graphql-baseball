@@ -4,6 +4,7 @@
   "team_list": [
     {
       "id": "1",
+      "leagueId": "2602757",
       "teamname": "Jeremy",
       "img": "https://s.yimg.com/ag/images/default_user_profile_pic_64sq.jpg",
       "url": "https://baseball.fantasysports.yahoo.com/b1/2602757/1",
@@ -24,6 +25,7 @@
     },
     {
       "id": "2",
+      "leagueId": "2602757",
       "teamname": "Joseph",
       "img": "https://s.yimg.com/ag/images/e9c43774-b8e9-4e09-adf6-9e6fefd7a5d1_64sq.jpg",
       "url": "https://baseball.fantasysports.yahoo.com/b1/2602757/2",
@@ -44,6 +46,7 @@
     },
     {
       "id": "3",
+      "leagueId": "2602757",
       "teamname": "Team 3",
       "img": "https://s.yimg.com/cv/apiv2/default/mlb/mlb_4.png",
       "url": "https://baseball.fantasysports.yahoo.com/b1/2602757/3",
@@ -64,6 +67,7 @@
     },
     {
       "id": "4",
+      "leagueId": "2602757",
       "teamname": "Team 4",
       "img": "https://s.yimg.com/cv/apiv2/default/mlb/mlb_5.png",
       "url": "https://baseball.fantasysports.yahoo.com/b1/2602757/4",
@@ -84,6 +88,7 @@
     },
     {
       "id": "5",
+      "leagueId": "2602757",
       "teamname": "Team 5",
       "img": "https://s.yimg.com/cv/apiv2/default/mlb/mlb_6.png",
       "url": "https://baseball.fantasysports.yahoo.com/b1/2602757/5",
@@ -104,6 +109,7 @@
     },
     {
       "id": "6",
+      "leagueId": "2602757",
       "teamname": "Team 6",
       "img": "https://s.yimg.com/cv/apiv2/default/mlb/mlb_7.png",
       "url": "https://baseball.fantasysports.yahoo.com/b1/2602757/6",
@@ -124,6 +130,7 @@
     },
     {
       "id": "7",
+      "leagueId": "2602757",
       "teamname": "Team 7",
       "img": "https://s.yimg.com/cv/apiv2/default/mlb/mlb_8.png",
       "url": "https://baseball.fantasysports.yahoo.com/b1/2602757/7",
@@ -144,6 +151,7 @@
     },
     {
       "id": "8",
+      "leagueId": "2602757",
       "teamname": "Team 8",
       "img": "https://s.yimg.com/cv/apiv2/default/mlb/mlb_9.png",
       "url": "https://baseball.fantasysports.yahoo.com/b1/2602757/8",
@@ -164,6 +172,7 @@
     },
     {
       "id": "9",
+      "leagueId": "2602757",
       "teamname": "Team 9",
       "img": "https://s.yimg.com/cv/apiv2/default/mlb/mlb_10.png",
       "url": "https://baseball.fantasysports.yahoo.com/b1/2602757/9",
@@ -184,6 +193,7 @@
     },
     {
       "id": "10",
+      "leagueId": "2602757",
       "teamname": "Team 10",
       "img": "https://s.yimg.com/cv/apiv2/default/mlb/mlb_11.png",
       "url": "https://baseball.fantasysports.yahoo.com/b1/2602757/10",
@@ -204,6 +214,7 @@
     },
     {
       "id": "11",
+      "leagueId": "2602757",
       "teamname": "Team 11",
       "img": "https://s.yimg.com/cv/apiv2/default/mlb/mlb_12.png",
       "url": "https://baseball.fantasysports.yahoo.com/b1/2602757/11",
@@ -224,6 +235,7 @@
     },
     {
       "id": "12",
+      "leagueId": "2602757",
       "teamname": "Team 12",
       "img": false,
       "url": "https://baseball.fantasysports.yahoo.com/b1/2602757/12",

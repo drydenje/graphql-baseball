@@ -12,6 +12,12 @@ const resolvers = {
   //     return "worked";
   //   },
   // },
+  Team: {
+    picks: ({ id, leagueId, teamname }, arg, context, info) => {
+      console.log(id, leagueId, teamname);
+      // return League.getPicks(teamId);
+    },
+  },
 };
 
 module.exports = {

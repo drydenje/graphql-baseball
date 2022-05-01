@@ -15,6 +15,7 @@ const typeDef = gql`
     img: String
     url: String
     managers: [Manager]
+    picks: [Pick]
   }
 
   type Manager {
@@ -29,14 +30,6 @@ const typeDef = gql`
     positionType: String
     count: Int
   }
-
-  # type Pick {
-  #   id: ID
-  #   playerID: String
-  #   teamID: String
-  #   pos: String
-  #   cost: Int
-  # }
 
   type Stat {
     stat_id: ID
@@ -53,7 +46,6 @@ const typeDef = gql`
   extend type Query {
     leagues: [League]
     getLeague(id: ID): League
-    # getLeague(leagueID: ID): String
   }
 
   # type Mutation {

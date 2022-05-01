@@ -76,6 +76,16 @@ class League {
     }
   }
 
+  static async getPicks(teamId) {
+    try {
+      // console.log("trying to get picks, teamId:", teamId);
+      const foundTeam = await model.find({ teamId: teamId });
+      return foundTeam;
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
+
   // static async createLeague(id, name, teams, positions, stats) {
   //   try {
   //     // insert a new league

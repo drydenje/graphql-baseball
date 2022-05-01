@@ -13,6 +13,7 @@ const players = require("./Players");
 
 const typeDef = gql`
   type Query
+  type Mutation
 `;
 
 connectDB();
