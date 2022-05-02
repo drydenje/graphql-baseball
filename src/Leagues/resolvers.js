@@ -13,8 +13,10 @@ const resolvers = {
   //   },
   // },
   Team: {
-    picks: ({ id, leagueId, teamname }, arg, context, info) => {
-      console.log(id, leagueId, teamname);
+    // picks: ({ id, leagueId, teamname }, arg, context, info) => {
+    picks: (obj, arg, context, info) => {
+      // console.log(id, leagueId, teamname);
+      // console.log(obj);
       // return League.getPicks(teamId);
     },
   },

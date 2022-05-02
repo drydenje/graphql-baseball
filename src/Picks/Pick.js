@@ -33,7 +33,7 @@ class Pick {
   static async listTeam(teamId) {
     try {
       const foundTeam = await model.find({ teamId: teamId });
-      console.log("listteam");
+      // console.log("listteam");
       return foundTeam;
     } catch (error) {
       console.error("Error:", error);
@@ -43,7 +43,7 @@ class Pick {
   static async addPick(id, playerId, teamId, leagueId, pos, cost) {
     try {
       Pick.create({ id, playerId, teamId, leagueId, pos, cost });
-      console.log("created");
+      // console.log("created");
       return this.searchPickById(id);
     } catch (error) {
       console.error("Error:", error);
