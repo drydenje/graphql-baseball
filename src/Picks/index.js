@@ -1,9 +1,9 @@
-const { League } = require("./League");
+const { Pick } = require("./Pick");
 const { resolvers } = require("./resolvers");
 const { typeDef } = require("./typeDef");
 
 module.exports = {
-  League,
+  Pick,
   resolvers,
   typeDef,
 };

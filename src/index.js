@@ -4,12 +4,16 @@ const connectDB = require("./config/db");
 const appearances = require("./Appearances");
 const batting = require("./Batting");
 const franchises = require("./Franchises");
+const league = require("./Leagues");
+const lookups = require("./Lookups");
 const parks = require("./Parks");
+const picks = require("./Picks");
 const pitching = require("./Pitching");
 const players = require("./Players");
 
 const typeDef = gql`
   type Query
+  type Mutation
 `;
 
 connectDB();
@@ -20,7 +24,10 @@ const server = new ApolloServer({
     appearances.typeDef,
     batting.typeDef,
     franchises.typeDef,
+    league.typeDef,
+    lookups.typeDef,
     parks.typeDef,
+    picks.typeDef,
     pitching.typeDef,
     players.typeDef,
   ],
@@ -28,7 +35,10 @@ const server = new ApolloServer({
     appearances.resolvers,
     batting.resolvers,
     franchises.resolvers,
+    league.resolvers,
+    lookups.resolvers,
     parks.resolvers,
+    picks.resolvers,
     pitching.resolvers,
     players.resolvers,
   ],
