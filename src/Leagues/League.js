@@ -12,6 +12,7 @@ const schema = new mongoose.Schema({
   team_list: [
     {
       id: String,
+      leagueId: String,
       teamname: String,
       img: String,
       url: String,
