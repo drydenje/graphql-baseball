@@ -30,10 +30,9 @@ class Pick {
     }
   }
 
-  static async listTeam(teamId) {
+  static async listTeam(teamId, leagueId) {
     try {
       const foundTeam = await model.find({ teamId: teamId });
-      // console.log("listteam");
       return foundTeam;
     } catch (error) {
       console.error("Error:", error);
@@ -50,3 +49,7 @@ class Pick {
     }
   }
 }
+
+module.exports = {
+  Pick,
+};

@@ -1,4 +1,5 @@
 const { League } = require("./League");
+const { Pick } = require("../Picks");
 
 const resolvers = {
   Query: {
@@ -14,10 +15,10 @@ const resolvers = {
   // },
   Team: {
     // picks: ({ id, leagueId, teamname }, arg, context, info) => {
-    picks: ({ id, leagueId, teamname }, args, context, info) => {
-      console.log(id, leagueId, teamname);
+    picks: ({ id, leagueId }, args, context, info) => {
+      // console.log("teamID:", id);
       // console.log(obj);
-      // return League.getPicks(teamId);
+      return Pick.listTeam(id, leagueId);
     },
   },
 };
