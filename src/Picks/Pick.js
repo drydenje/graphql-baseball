@@ -32,7 +32,9 @@ class Pick {
 
   static async listTeam(teamId, leagueId) {
     try {
-      const foundTeam = await model.find({ teamId: teamId });
+      const foundTeam = await model.find({
+        $and: [{ teamId: teamId }, { leagueId: leagueId }],
+      });
       return foundTeam;
     } catch (error) {
       console.error("Error:", error);

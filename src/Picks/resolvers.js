@@ -1,4 +1,5 @@
 const { Pick } = require("./Pick");
+const { Player } = require("../Players/Player");
 
 const resolvers = {
   Query: {
@@ -8,6 +9,11 @@ const resolvers = {
     },
     listTeam: (obj, { id }, context, info) => {
       return Pick.listTeam(teamId);
+    },
+  },
+  Pick: {
+    player: ({ playerId }, args, context, info) => {
+      return Player.searchByID(playerId);
     },
   },
   Mutation: {
