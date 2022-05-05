@@ -43,9 +43,16 @@ class Pick {
 
   static async addPick(id, playerId, teamId, leagueId, pos, cost) {
     try {
-      Pick.create({ id, playerId, teamId, leagueId, pos, cost });
-      // console.log("created");
-      return this.searchPickById(id);
+      console.log("ID:", id);
+      const pickAdded = await model.create({
+        id,
+        playerId,
+        teamId,
+        leagueId,
+        pos,
+        cost,
+      });
+      return pickAdded;
     } catch (error) {
       console.error("Error:", error);
     }
