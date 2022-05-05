@@ -30,10 +30,11 @@ class Pick {
     }
   }
 
-  static async listTeam(teamId) {
+  static async listTeam(teamId, leagueId) {
     try {
-      const foundTeam = await model.find({ teamId: teamId });
-      // console.log("listteam");
+      const foundTeam = await model.find({
+        $and: [{ teamId: teamId }, { leagueId: leagueId }],
+      });
       return foundTeam;
     } catch (error) {
       console.error("Error:", error);
@@ -42,11 +43,22 @@ class Pick {
 
   static async addPick(id, playerId, teamId, leagueId, pos, cost) {
     try {
-      Pick.create({ id, playerId, teamId, leagueId, pos, cost });
-      // console.log("created");
-      return this.searchPickById(id);
+      console.log("ID:", id);
+      const pickAdded = await model.create({
+        id,
+        playerId,
+        teamId,
+        leagueId,
+        pos,
+        cost,
+      });
+      return pickAdded;
     } catch (error) {
       console.error("Error:", error);
     }
   }
 }
+
+module.exports = {
+  Pick,
+};

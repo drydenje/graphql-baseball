@@ -3,7 +3,7 @@ const { gql } = require("apollo-server");
 const typeDef = gql`
   type Pick {
     id: ID
-    playerId: ID
+    player: Player
     teamId: ID
     leagueId: ID
     pos: String
@@ -12,6 +12,7 @@ const typeDef = gql`
 
   extend type Query {
     picks: [Pick]
+    player(playerId: ID): Player
     getPickById(id: ID): Pick
     listTeam(teamId: ID): [Pick]
   }
