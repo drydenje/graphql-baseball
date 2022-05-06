@@ -17,13 +17,9 @@ const resolvers = {
     },
   },
   Mutation: {
-    addPick: (
-      obj,
-      { id, playerId, teamId, leagueId, pos, cost },
-      context,
-      info
-    ) => {
-      return Pick.addPick(id, playerId, teamId, leagueId, pos, cost);
+    addPick: (obj, args, context, info) => {
+      console.log(args);
+      return Pick.addPick(pick);
     },
   },
 };
