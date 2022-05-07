@@ -17,8 +17,8 @@ const resolvers = {
     },
   },
   Mutation: {
-    addPick: (obj, args, context, info) => {
-      console.log(args);
+    addPick: (obj, { pick }, context, info) => {
+      // console.log(pick);
       return Pick.addPick(pick);
     },
   },
