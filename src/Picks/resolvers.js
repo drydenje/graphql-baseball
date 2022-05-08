@@ -17,7 +17,12 @@ const resolvers = {
     },
   },
   Mutation: {
-    addPick: (obj, { pick }, context, info) => {
+    addPick: (
+      obj,
+      { id, playerId, teamId, leagueId, pos, cost },
+      context,
+      info
+    ) => {
       // console.log(pick);
       return Pick.addPick(pick);
     },
