@@ -17,7 +17,17 @@ const typeDef = gql`
     listTeam(teamId: ID): [Pick]
   }
 
+  input PickInput {
+    id: ID
+    playerId: String
+    teamId: ID
+    leagueId: ID
+    pos: String
+    cost: Int
+  }
+
   extend type Mutation {
+    # addPick(pick: PickInput): Pick
     addPick(
       id: ID
       playerId: String
