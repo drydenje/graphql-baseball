@@ -23,8 +23,7 @@ const resolvers = {
       context,
       info
     ) => {
-      // console.log(pick);
-      return Pick.addPick(pick);
+      return Pick.addPick(id, playerId, teamId, leagueId, pos, cost);
     },
   },
 };

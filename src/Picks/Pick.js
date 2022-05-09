@@ -43,7 +43,6 @@ class Pick {
 
   static async addPick(id, playerId, teamId, leagueId, pos, cost) {
     try {
-      console.log("ID:", id);
       const pickAdded = await model.create({
         id,
         playerId,
