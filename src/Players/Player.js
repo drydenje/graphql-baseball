@@ -47,6 +47,15 @@ class Player {
       console.error("Error:", error);
     }
   }
+
+  static async searchByTeam(teamID) {
+    try {
+      const teamRoster = await model.find();
+      return teamRoster;
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
 }
 
 module.exports = {
