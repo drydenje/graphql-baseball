@@ -6,6 +6,9 @@ const resolvers = {
     careerStats: (obj, { id }, context, info) => {
       return Batting.searchByPlayerID(id);
     },
+    lastYearsStats: (obj, { id }, context, info) => {
+      return Batting.searchByTeam(id);
+    },
   },
 };
 

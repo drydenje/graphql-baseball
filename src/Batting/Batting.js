@@ -45,6 +45,34 @@ class Batting {
       console.error("Error:", error);
     }
   }
+
+  static async searchByTeam(id) {
+    try {
+      const match = { teamID: id };
+      const group = {
+        _id: "$yearID",
+        players: {
+          $push: "$playerID",
+        },
+        count: {
+          $sum: 1,
+        },
+      };
+      const sort = { _id: -1 };
+      const limit = { $limit: 1 };
+      const foundLastYearsStats = await model.aggregate([
+        { $match: match },
+        { $group: group },
+        { $sort: sort },
+        { $limit: 1 },
+      ]);
+      console.log(foundLastYearsStats);
+
+      return null;
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
 }
 
 module.exports = {

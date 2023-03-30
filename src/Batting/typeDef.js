@@ -29,6 +29,7 @@ const typeDef = gql`
   extend type Query {
     # allStatlines: [Batting]
     careerStats(id: ID): [Batting]
+    lastYearsStats(id: ID): [Batting]
   }
 `;
 
