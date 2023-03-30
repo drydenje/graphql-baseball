@@ -51,23 +51,24 @@ class Batting {
       const match = { teamID: id };
       const group = {
         _id: "$yearID",
-        players: {
-          $push: "$playerID",
-        },
-        count: {
-          $sum: 1,
-        },
+        // players: {
+        //   $push: "$playerID",
+        // },
+        // count: {
+        //   $sum: 1,
+        // },
       };
       const sort = { _id: -1 };
-      const limit = { $limit: 1 };
-      const foundLastYearsStats = await model.aggregate([
+      const foundLastYear = await model.aggregate([
         { $match: match },
         { $group: group },
         { $sort: sort },
         { $limit: 1 },
       ]);
-      console.log(foundLastYearsStats);
-
+      const y = foundLastYear[0]._id;
+      // console.log(typeof y);
+      const records = await model.find({ teamID: id, yearID: y });
+      console.log(records);
       return null;
     } catch (error) {
       console.error("Error:", error);
