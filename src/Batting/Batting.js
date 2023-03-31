@@ -68,8 +68,8 @@ class Batting {
       const y = foundLastYear[0]._id;
       // console.log(typeof y);
       const records = await model.find({ teamID: id, yearID: y });
-      console.log(records);
-      return null;
+      // console.log(records);
+      return records;
     } catch (error) {
       console.error("Error:", error);
     }
