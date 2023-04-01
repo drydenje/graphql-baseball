@@ -21,7 +21,13 @@ class Franchise {
 
   static async searchByID(id) {
     try {
-      const foundFranchise = await model.findOne({ franchID: id });
+      let foundFranchise = await model.findOne({ franchID: id });
+      const roster = {
+        name: "test",
+        last: "ugh",
+      };
+      let obj = Object.assign(roster, foundFranchise);
+      console.log("OBJ:", obj);
       return foundFranchise;
     } catch (error) {
       console.error("Error:", error);
@@ -32,6 +38,25 @@ class Franchise {
     try {
       const foundFranchises = await model.find({ active: "Y" });
       return foundFranchises;
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
+
+  static async getFranchiseRoster() {
+    // [
+    //   {
+    //     $match: {
+    //       playerID: {
+    //         $in: ["abramge01", "adamsgl01"],
+    //       },
+    //     },
+    //   },
+    // ];
+    try {
+      const players = await model.find();
+
+      return players;
     } catch (error) {
       console.error("Error:", error);
     }
