@@ -21,12 +21,15 @@ class Franchise {
 
   static async searchByID(id) {
     try {
-      let foundFranchise = await model.findOne({ franchID: id });
-      const roster = {
+      let obj = {};
+      let roster = {
         name: "test",
         last: "ugh",
       };
-      let obj = Object.assign(roster, foundFranchise);
+      let foundFranchise = await model.findOne({ franchID: id });
+      // .then((docs) => {
+      //   obj = Object.assign(docs, roster);
+      // });
       console.log("OBJ:", obj);
       return foundFranchise;
     } catch (error) {
