@@ -22,14 +22,28 @@ class Franchise {
   static async searchByID(id) {
     try {
       let obj = {};
-      let roster = {
-        name: "test",
-        last: "ugh",
-      };
+      let roster = [
+        {
+          name: "test",
+          last: "ugh",
+        },
+        {
+          name: "test",
+          last: "ugh",
+        },
+        {
+          name: "test",
+          last: "ugh",
+        },
+      ];
       let foundFranchise = await model.findOne({ franchID: id });
       // .then((docs) => {
       //   obj = Object.assign(docs, roster);
       // });
+      obj = {
+        ...foundFranchise._doc,
+        roster: roster,
+      };
       console.log("OBJ:", obj);
       return foundFranchise;
     } catch (error) {
