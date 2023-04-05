@@ -9,9 +9,9 @@ const resolvers = {
     activeFranchises: (obj, { id }, context, info) => {
       return Franchise.activeFranchises();
     },
-    // franchiseRoster: (obj, { id }, context, info) => {
-    //   return Franchise.getFranchiseRoster(id);
-    // },
+    franchiseRoster: (obj, { id }, context, info) => {
+      return Franchise.getFranchiseRoster(id);
+    },
     // franchName: (obj, arg, context) => {
     //   console.log(obj);
     //   return {

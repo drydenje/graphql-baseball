@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const batting = require("../Batting");
 
 const schema = new mongoose.Schema({
   franchID: String,
@@ -21,30 +22,7 @@ class Franchise {
 
   static async searchByID(id) {
     try {
-      let obj = {};
-      let roster = [
-        {
-          name: "test",
-          last: "ugh",
-        },
-        {
-          name: "test",
-          last: "ugh",
-        },
-        {
-          name: "test",
-          last: "ugh",
-        },
-      ];
       let foundFranchise = await model.findOne({ franchID: id });
-      // .then((docs) => {
-      //   obj = Object.assign(docs, roster);
-      // });
-      obj = {
-        ...foundFranchise._doc,
-        roster: roster,
-      };
-      console.log("OBJ:", obj);
       return foundFranchise;
     } catch (error) {
       console.error("Error:", error);
@@ -60,7 +38,34 @@ class Franchise {
     }
   }
 
-  static async getFranchiseRoster() {
+  static async getFranchiseRoster(id) {
+    // console.log(batting);
+    // const stats = batting.resolvers.Query.lastYearsStats("BAL");
+    let obj = {};
+    let roster = [
+      {
+        name: "test",
+        last: "ugh",
+      },
+      {
+        name: "test",
+        last: "ugh",
+      },
+      {
+        name: "test",
+        last: "ugh",
+      },
+    ];
+
+    // .then((docs) => {
+    //   obj = Object.assign(docs, roster);
+    // });
+    // obj = {
+    //   ...foundFranchise._doc,
+    //   roster: roster,
+    // };
+    // console.log("OBJ:", obj);
+    // console.log("stats:", stats);
     // [
     //   {
     //     $match: {
@@ -71,7 +76,7 @@ class Franchise {
     //   },
     // ];
     try {
-      const players = await model.find();
+      const players = await model.find({ franchID: id });
 
       return players;
     } catch (error) {
