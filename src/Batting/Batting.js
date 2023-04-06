@@ -46,9 +46,9 @@ class Batting {
     }
   }
 
-  static async searchByTeam(id) {
+  static async searchByTeam(teamID) {
     try {
-      const match = { teamID: id };
+      const match = { teamID: teamID };
       const group = {
         _id: "$yearID",
         // players: {
@@ -67,7 +67,11 @@ class Batting {
       ]);
       const y = foundLastYear[0]._id;
       // console.log(typeof y);
-      const records = await model.find({ teamID: id, yearID: y });
+      const records = await model.find({
+        teamID: teamID,
+        yearID: y,
+        playerID: "abadfe01",
+      });
       // console.log(records);
       return records;
     } catch (error) {
