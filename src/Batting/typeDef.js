@@ -26,9 +26,14 @@ const typeDef = gql`
     iGIDP: Int
   }
 
+  enum SortOrder {
+    ASC
+    DESC
+  }
+
   extend type Query {
     # allStatlines: [Batting]
-    careerStats(id: ID, limit: Int): [Batting]
+    careerStats(id: ID!, limit: Int, sort: SortOrder): [Batting]
     lastYearsStats(id: ID): [Batting]
   }
 `;

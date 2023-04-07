@@ -5,8 +5,8 @@ const { Batting } = require("../Batting/Batting");
 const resolvers = {
   Query: {
     players: () => Player.all(),
-    playerByID: (obj, { id, limit }, context, info) => {
-      return Player.searchByID(id, limit);
+    playerByID: (obj, { id, limit, sort }, context, info) => {
+      return Player.searchByID(id, limit, sort);
     },
   },
   Player: {
