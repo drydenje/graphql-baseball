@@ -37,9 +37,13 @@ class Batting {
     }
   }
 
-  static async searchByPlayerID(id) {
+  static async searchByPlayerID(id, limit) {
+    const sort = -1;
     try {
-      const foundBattingLines = await model.find({ playerID: id });
+      const foundBattingLines = await model
+        .find({ playerID: id })
+        .sort({ year: sort })
+        .limit(limit);
       return foundBattingLines;
     } catch (error) {
       console.error("Error:", error);
