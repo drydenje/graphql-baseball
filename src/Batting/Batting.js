@@ -61,17 +61,16 @@ class Batting {
   }
 
   static async getTeamRoster(teamID) {
-    console.log(teamID);
     try {
       const match = { teamID: teamID };
       const group = {
         _id: "$yearID",
-        // players: {
-        //   $push: "$playerID",
-        // },
-        // count: {
-        //   $sum: 1,
-        // },
+        players: {
+          $push: "$playerID",
+        },
+        count: {
+          $sum: 1,
+        },
       };
       const sort = { _id: -1 };
       const foundLastYear = await model.aggregate([

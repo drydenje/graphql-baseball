@@ -21,9 +21,8 @@ const resolvers = {
     // },
   },
   Franchise: {
-    roster: ({ id, teamID }, arg, context, info) => {
-      console.log("context:", id);
-      return Batting.getTeamRoster(teamID);
+    roster: ({ franchID }, arg, context, info) => {
+      return Batting.getTeamRoster(franchID);
     },
   },
 };
