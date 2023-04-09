@@ -14,7 +14,6 @@ const typeDef = gql`
     franchises: [Franchise]
     franchise(id: ID): Franchise
     activeFranchises: [Franchise]
-    franchiseRoster(id: ID): [Player]
   }
 `;
 

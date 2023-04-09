@@ -60,7 +60,8 @@ class Batting {
     }
   }
 
-  static async searchByTeam(teamID) {
+  static async getTeamRoster(teamID) {
+    console.log(teamID);
     try {
       const match = { teamID: teamID };
       const group = {
@@ -79,6 +80,7 @@ class Batting {
         { $sort: sort },
         { $limit: 1 },
       ]);
+      console.log(foundLastYear);
       const y = foundLastYear[0]._id;
       // console.log(typeof y);
       const records = await model.find({
