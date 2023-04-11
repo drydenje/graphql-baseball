@@ -61,7 +61,6 @@ class Batting {
   }
 
   static async getLastRosterStats(teamID) {
-    // static async getTeamRoster(teamID) {
     try {
       const match = { teamID: teamID };
       const group = {

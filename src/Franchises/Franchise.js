@@ -41,16 +41,21 @@ class Franchise {
 
   static async getFranchiseRoster(teamID) {
     try {
-      // const lastYear = await Batting.getLastRosterStats(teamID);
+      // find which players had at-bats for a specific team, and pull the year and count as well
       const {
         _id: year,
-        players,
+        players: hitters,
         count,
       } = await Batting.getLastRosterStats(teamID);
-      const playersToSearchFor = players.map((player) => {
-        return player.playerID;
+
+      // the playerID's that will be sent to the Player.js function
+      const hittersToSearchFor = hitters.map((hitter) => {
+        return hitter.playerID;
       });
-      console.log(playersToSearchFor);
+
+      const foundHitters = await Player.getFranchiseRoster(hittersToSearchFor);
+      console.log(foundHitters);
+
       // let obj = {};
       // let roster = [
       //   {
@@ -75,16 +80,6 @@ class Franchise {
       // };
       // console.log("OBJ:", obj);
       // console.log("stats:", stats);
-      // [
-      //   {
-      //     $match: {
-      //       playerID: {
-      //         $in: ["abramge01", "adamsgl01"],
-      //       },
-      //     },
-      //   },
-      // ];
-      // try {
     } catch (error) {
       console.error("Error:", error);
     }
