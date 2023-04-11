@@ -1,5 +1,5 @@
 const { Franchise } = require("./Franchise");
-const { Batting } = require("../Batting/Batting");
+// const { Player } = require("../Players/Player");
 
 const resolvers = {
   Query: {
@@ -22,7 +22,8 @@ const resolvers = {
   },
   Franchise: {
     roster: ({ franchID }, arg, context, info) => {
-      return Batting.getTeamRoster(franchID);
+      return Franchise.getFranchiseRoster(franchID);
+      // return Batting.getTeamRoster(franchID);
     },
   },
 };

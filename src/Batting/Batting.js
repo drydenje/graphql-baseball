@@ -60,8 +60,8 @@ class Batting {
     }
   }
 
-  // static async getLastRosterStats(teamID) {
-  static async getTeamRoster(teamID) {
+  static async getLastRosterStats(teamID) {
+    // static async getTeamRoster(teamID) {
     try {
       const match = { teamID: teamID };
       const group = {
@@ -81,10 +81,10 @@ class Batting {
         { $limit: 1 },
       ]);
       // console.log(foundLastYear);
-      const lastYear = foundLastYear[0]._id;
-      console.log("lastYear:", lastYear);
-      const playersToSearchFor = foundLastYear[0].players;
-      console.log("players:", playersToSearchFor);
+      // const lastYear = foundLastYear[0]._id;
+      // console.log("lastYear:", lastYear);
+      // const playersToSearchFor = foundLastYear[0].players;
+      // console.log("players:", playersToSearchFor);
       // const records = await model.find({
       // teamID: teamID,
       // yearID: y,
@@ -92,7 +92,7 @@ class Batting {
       // });
       // console.log(records);
       // return records;
-      return null;
+      return foundLastYear[0];
     } catch (error) {
       console.error("Error:", error);
     }
