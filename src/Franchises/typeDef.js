@@ -7,7 +7,12 @@ const typeDef = gql`
     franchName: String
     active: String
     NAassoc: String
-    roster: [Player]
+    roster: Roster
+  }
+
+  type Roster {
+    hitters: [Player]
+    pitchers: [Player]
   }
 
   extend type Query {

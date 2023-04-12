@@ -34,7 +34,7 @@ const typeDef = gql`
   extend type Query {
     # allStatlines: [Batting]
     careerStats(id: ID!, limit: Int, sort: SortOrder): [Batting]
-    lastYearsStats(id: ID): [Batting]
+    # lastYearsStats(id: ID): [Batting]
   }
 `;
 

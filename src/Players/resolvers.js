@@ -13,8 +13,10 @@ const resolvers = {
     basicPitchingStats: ({ playerID }, arg, context, info) => {
       return Pitching.searchByPlayerID(playerID);
     },
-    basicBattingStats: ({ playerID, limit }, arg, context, info) => {
-      return Batting.searchByPlayerID(playerID, limit);
+    basicBattingStats: (obj, arg, context, info) => {
+      const { playerID, limit, teamID } = obj;
+      console.log("obj:", obj);
+      return Batting.searchByPlayerID(playerID, limit, teamID);
     },
   },
 };

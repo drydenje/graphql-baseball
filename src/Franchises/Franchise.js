@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const { Batting } = require("../Batting/Batting");
+const { Pitching } = require("../Pitching/Pitching");
 const { Player } = require("../Players/Player");
 
 const schema = new mongoose.Schema({
@@ -41,20 +42,41 @@ class Franchise {
 
   static async getFranchiseRoster(teamID) {
     try {
-      // find which players had at-bats for a specific team, and pull the year and count as well
-      const {
-        _id: year,
-        players: hitters,
-        count,
-      } = await Batting.getLastRosterStats(teamID);
+      // find which players had at-bats for a specific team
+      const { players: hitterStats } = await Batting.getLastRosterStats(teamID);
+      const { players: pitcherStats } = await Pitching.getLastRosterStats(
+        teamID
+      );
+      // console.log(pitcherStats);
 
       // the playerID's that will be sent to the Player.js function
-      const hittersToSearchFor = hitters.map((hitter) => {
+      const hittersToSearchFor = hitterStats.map((hitter) => {
         return hitter.playerID;
       });
+      const pitchersToSearchFor = pitcherStats.map((pitcher) => {
+        return pitcher.playerID;
+      });
 
-      const foundHitters = await Player.getFranchiseRoster(hittersToSearchFor);
-      console.log(foundHitters);
+      const foundHitters = await Player.getFranchiseRoster(
+        hittersToSearchFor,
+        teamID
+      );
+
+      const foundPitchers = await Player.getFranchiseRoster(
+        pitchersToSearchFor,
+        teamID
+      );
+
+      // TODO: search for pitchers and add them and their stats to the object
+      // TODO: map over hitters and add stats to the object
+      // currently returning pitchers with 1 or so AB's, maybe sort them to the bottom on the client side?
+      const roster = {
+        hitters: foundHitters,
+        pitchers: foundPitchers,
+        // pitchers: null,
+      };
+      // console.log(roster);
+      return roster;
 
       // let obj = {};
       // let roster = [
