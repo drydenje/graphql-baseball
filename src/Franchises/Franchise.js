@@ -47,7 +47,6 @@ class Franchise {
       const { players: pitcherStats } = await Pitching.getLastRosterStats(
         teamID
       );
-      // console.log(pitcherStats);
 
       // the playerID's that will be sent to the Player.js function
       const hittersToSearchFor = hitterStats.map((hitter) => {
@@ -67,41 +66,12 @@ class Franchise {
         teamID
       );
 
-      // TODO: search for pitchers and add them and their stats to the object
-      // TODO: map over hitters and add stats to the object
       // currently returning pitchers with 1 or so AB's, maybe sort them to the bottom on the client side?
       const roster = {
         hitters: foundHitters,
         pitchers: foundPitchers,
-        // pitchers: null,
       };
-      // console.log(roster);
       return roster;
-
-      // let obj = {};
-      // let roster = [
-      //   {
-      //     name: "test",
-      //     last: "ugh",
-      //   },
-      //   {
-      //     name: "test",
-      //     last: "ugh",
-      //   },
-      //   {
-      //     name: "test",
-      //     last: "ugh",
-      //   },
-      // ];
-      // .then((docs) => {
-      //   obj = Object.assign(docs, roster);
-      // });
-      // obj = {
-      //   ...foundFranchise._doc,
-      //   roster: roster,
-      // };
-      // console.log("OBJ:", obj);
-      // console.log("stats:", stats);
     } catch (error) {
       console.error("Error:", error);
     }
