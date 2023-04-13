@@ -27,7 +27,7 @@ const typeDef = gql`
     deathState: String
     deathCity: String
     basicPitchingStats: [Pitching]
-    basicBattingStats: [Batting]
+    basicBattingStats(limit: Int): [Batting]
   }
 
   extend type Query {

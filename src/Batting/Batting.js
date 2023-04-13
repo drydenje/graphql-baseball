@@ -37,10 +37,49 @@ class Batting {
     }
   }
 
-  static async searchByPlayerID(id) {
+  static async searchByPlayerID(id, limit, sort) {
+    let toSort = null;
+    switch (sort) {
+      case "ASC":
+        toSort = 1;
+        break;
+      case "DESC":
+        toSort = -1;
+      default:
+        break;
+    }
+
     try {
-      const foundBattingLines = await model.find({ playerID: id });
+      const foundBattingLines = await model
+        .find({ playerID: id })
+        .sort({ yearID: toSort })
+        .limit(limit);
       return foundBattingLines;
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
+
+  static async getLastRosterStats(teamID) {
+    try {
+      const match = { teamID: teamID };
+      const group = {
+        _id: "$yearID",
+        players: {
+          $push: "$$ROOT",
+        },
+        count: {
+          $sum: 1,
+        },
+      };
+      const sort = { _id: -1 };
+      const foundLastYear = await model.aggregate([
+        { $match: match },
+        { $group: group },
+        { $sort: sort },
+        { $limit: 1 },
+      ]);
+      return foundLastYear[0];
     } catch (error) {
       console.error("Error:", error);
     }

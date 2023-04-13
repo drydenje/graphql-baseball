@@ -44,6 +44,31 @@ class Pitching {
       console.error("Error:", error);
     }
   }
+
+  static async getLastRosterStats(teamID) {
+    try {
+      const match = { teamID: teamID };
+      const group = {
+        _id: "$yearID",
+        players: {
+          $push: "$$ROOT",
+        },
+        count: {
+          $sum: 1,
+        },
+      };
+      const sort = { _id: -1 };
+      const foundLastYear = await model.aggregate([
+        { $match: match },
+        { $group: group },
+        { $sort: sort },
+        { $limit: 1 },
+      ]);
+      return foundLastYear[0];
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
 }
 
 module.exports = {
