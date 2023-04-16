@@ -8,6 +8,19 @@ const typeDef = gql`
     active: String
     NAassoc: String
     roster: Roster
+    league: MlbLeague
+    division: Division
+  }
+
+  enum MlbLeague {
+    American
+    National
+  }
+
+  enum Division {
+    East
+    Central
+    West
   }
 
   type Roster {
@@ -19,7 +32,12 @@ const typeDef = gql`
     franchises: [Franchise]
     franchise(id: ID): Franchise
     activeFranchises: [Franchise]
+    adjustFranchiseTable: Boolean
   }
+
+  # extend type Mutation {
+  #   addLeagues(): Boolean
+  # }
 `;
 
 module.exports = {

@@ -8,6 +8,8 @@ const schema = new mongoose.Schema({
   franchName: String,
   active: String,
   NAassoc: String,
+  league: String,
+  division: String,
 });
 
 const model = mongoose.model("Franchise", schema);
@@ -74,6 +76,71 @@ class Franchise {
       return roster;
     } catch (error) {
       console.error("Error:", error);
+    }
+  }
+
+  static async updateTeams(value) {
+    console.log("value:", value.teams);
+    try {
+      const update = await model.updateMany(
+        {
+          franchID: { $in: value.teams },
+        },
+        {
+          $set: {
+            league: value.league,
+            division: value.division,
+          },
+        }
+      );
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  static async adjustFranchiseTable() {
+    try {
+      const divisions = {
+        AmericanEast: {
+          teams: ["TBD", "TOR", "NYY", "BAL", "BOS"],
+          league: "American",
+          division: "East",
+        },
+        AmericanCentral: {
+          teams: ["MIN", "CLE", "CHW", "DET", "KCR"],
+          league: "American",
+          division: "Central",
+        },
+        AmericanWest: {
+          teams: ["TEX", "ANA", "SEA", "HOU", "OAK"],
+          league: "American",
+          division: "West",
+        },
+        NationalEast: {
+          teams: ["ATL", "NYM", "FLA", "PHI", "WSN"],
+          league: "National",
+          division: "East",
+        },
+        NationalCentral: {
+          teams: ["MIL", "PIT", "CHC", "STL", "CIN"],
+          league: "National",
+          division: "Central",
+        },
+        NationalWest: {
+          teams: ["ARI", "LAD", "SDP", "SFG", "COL"],
+          league: "National",
+          division: "West",
+        },
+      };
+
+      Object.entries(divisions).forEach(([key, value]) => {
+        // console.log(`${key}, ${value}`);
+        this.updateTeams(value);
+      });
+      // console.log(teamsToUpdate);
+      return true;
+    } catch (error) {
+      console.error(error);
     }
   }
 }
