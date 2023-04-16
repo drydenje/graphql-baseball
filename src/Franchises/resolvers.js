@@ -9,6 +9,9 @@ const resolvers = {
     activeFranchises: (obj, { id }, context, info) => {
       return Franchise.activeFranchises();
     },
+    adjustFranchiseTable: (obj, { id }, context, info) => {
+      return Franchise.adjustFranchiseTable();
+    },
   },
   Franchise: {
     roster: ({ franchID }, arg, context, info) => {

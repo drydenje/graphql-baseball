@@ -78,6 +78,57 @@ class Franchise {
       console.error("Error:", error);
     }
   }
+
+  static async adjustFranchiseTable() {
+    try {
+      const divisions = {
+        AmericanEast: {
+          teams: ["TBD", "TOR", "NYY", "BAL", "BOS"],
+          league: "American",
+          division: "East",
+        },
+        AmericanCentral: {
+          teams: ["MIN", "CLE", "CHW", "DET", "KCR"],
+          league: "American",
+          division: "Central",
+        },
+        AmericanWest: {
+          teams: ["TEX", "ANA", "SEA", "HOU", "OAK"],
+          league: "American",
+          division: "West",
+        },
+        NationalEast: {
+          teams: ["ATL", "NYM", "FLA", "PHI", "WSN"],
+          league: "National",
+          division: "East",
+        },
+        NationalCentral: {
+          teams: ["MIL", "PIT", "CHC", "STL", "CIN"],
+          league: "National",
+          division: "Central",
+        },
+        NationalWest: {
+          teams: ["ARI", "LAD", "SDP", "SFG", "COL"],
+          league: "National",
+          division: "West",
+        },
+      };
+  
+      Object.entries(divisions).forEach(([key, value]) => {
+        // console.log(`${key}, ${value}`);
+        const teamsToUpdate = await model.aggregate([
+          {
+
+          }
+        ])
+      });
+      console.log(teamsToUpdate);
+      return true;
+      
+    } catch (error) {
+      console.error(error);
+    }
+  }
 }
 
 module.exports = {

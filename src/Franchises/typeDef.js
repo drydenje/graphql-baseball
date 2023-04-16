@@ -8,11 +8,11 @@ const typeDef = gql`
     active: String
     NAassoc: String
     roster: Roster
-    league: League
+    league: MlbLeague
     division: Division
   }
 
-  enum League {
+  enum MlbLeague {
     American
     National
   }
@@ -32,6 +32,7 @@ const typeDef = gql`
     franchises: [Franchise]
     franchise(id: ID): Franchise
     activeFranchises: [Franchise]
+    adjustFranchiseTable: Boolean
   }
 
   # extend type Mutation {
