@@ -8,6 +8,8 @@ const schema = new mongoose.Schema({
   franchName: String,
   active: String,
   NAassoc: String,
+  league: String,
+  division: String,
 });
 
 const model = mongoose.model("Franchise", schema);
