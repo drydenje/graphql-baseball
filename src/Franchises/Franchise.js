@@ -79,6 +79,25 @@ class Franchise {
     }
   }
 
+  static async updateTeams(value) {
+    console.log("value:", value.teams);
+    try {
+      const update = await model.updateMany(
+        {
+          franchID: { $in: value.teams },
+        },
+        {
+          $set: {
+            league: value.league,
+            division: value.division,
+          },
+        }
+      );
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   static async adjustFranchiseTable() {
     try {
       const divisions = {
@@ -113,18 +132,13 @@ class Franchise {
           division: "West",
         },
       };
-  
+
       Object.entries(divisions).forEach(([key, value]) => {
         // console.log(`${key}, ${value}`);
-        const teamsToUpdate = await model.aggregate([
-          {
-
-          }
-        ])
+        this.updateTeams(value);
       });
-      console.log(teamsToUpdate);
+      // console.log(teamsToUpdate);
       return true;
-      
     } catch (error) {
       console.error(error);
     }
