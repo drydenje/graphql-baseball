@@ -79,8 +79,58 @@ class Franchise {
     }
   }
 
+  // Takes franchID and returns a teamID
+  // used in updateTeams for other query lookups
+  static async updateTeamID() {
+    try {
+      const teamID = {
+        NYY: "NYA", //
+        BAL: "BAL",
+        TBD: "TBA", //
+        TOR: "TOR",
+        BOS: "BOS",
+        MIN: "MIN",
+        CLE: "CLE",
+        CHW: "CHA", //
+        DET: "DET",
+        KCR: "KCA", //
+        TEX: "TEX",
+        ANA: "ANA",
+        SEA: "SEA",
+        HOU: "HOU",
+        OAK: "OAK",
+        ATL: "ATL",
+        NYM: "NYN", //
+        FLA: "MIA", //
+        PHI: "PHI",
+        WSN: "WAS", //
+        MIL: "MIL",
+        PIT: "PIT",
+        CHC: "CHN", //
+        STL: "SLN", //
+        CIN: "CIN",
+        ARI: "ARI",
+        LAD: "LAN", //
+        SDP: "SDN", //
+        SFG: "SFN", //
+        COL: "COL",
+      };
+
+      // Object.entries(teamID).forEach([key, value])
+
+      // turn teamID keys into an array
+      // model.updateMany this array
+      // set the teamID for each team
+    } catch (error) {
+      console.error(error);
+    }
+
+    // return teamID[franchID];
+  }
+  // console.log("TEST:", franchToTeam("NYY"));
+
   static async updateTeams(value) {
-    console.log("value:", value.teams);
+    // console.log("value:", value.teams);
     try {
       const update = await model.updateMany(
         {
