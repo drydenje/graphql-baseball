@@ -116,7 +116,7 @@ class Franchise {
         COL: "COL",
       };
 
-      // Object.entries(teamID).forEach([key, value])
+      Object.entries(teamID).forEach([key, value]);
 
       // turn teamID keys into an array
       // model.updateMany this array
