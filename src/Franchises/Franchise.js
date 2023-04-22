@@ -116,11 +116,25 @@ class Franchise {
         COL: "COL",
       };
 
-      Object.entries(teamID).forEach([key, value]);
-
       // turn teamID keys into an array
+      const teams = Object.keys(teamID);
+
       // model.updateMany this array
+      const update = await model.updateMany(
+        {
+          // franchID: { $in: teams },
+          franchID: { $in: ["NYY", "TOR"] },
+        },
+        {
+          $set: {
+            // teamID: teams[teamID],
+            teamID: "test",
+          },
+        }
+      );
       // set the teamID for each team
+      console.log(update);
+      return true;
     } catch (error) {
       console.error(error);
     }
@@ -183,11 +197,13 @@ class Franchise {
         },
       };
 
-      Object.entries(divisions).forEach(([key, value]) => {
-        // console.log(`${key}, ${value}`);
-        this.updateTeams(value);
-      });
-      // console.log(teamsToUpdate);
+      console.log("test");
+      this.updateTeamID();
+
+      // Object.entries(divisions).forEach(([key, value]) => {
+      //   this.updateTeams(value);
+      // });
+
       return true;
     } catch (error) {
       console.error(error);
