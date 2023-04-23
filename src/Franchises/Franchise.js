@@ -85,55 +85,92 @@ class Franchise {
     try {
       const teamID = {
         NYY: "NYA", //
-        BAL: "BAL",
-        TBD: "TBA", //
-        TOR: "TOR",
-        BOS: "BOS",
-        MIN: "MIN",
-        CLE: "CLE",
-        CHW: "CHA", //
-        DET: "DET",
-        KCR: "KCA", //
-        TEX: "TEX",
+        // BAL: "BAL",
+        // TBD: "TBA", //
+        // TOR: "TOR",
+        // BOS: "BOS",
+        // MIN: "MIN",
+        // CLE: "CLE",
+        // CHW: "CHA", //
+        // DET: "DET",
+        // KCR: "KCA", //
+        // TEX: "TEX",
         ANA: "ANA",
-        SEA: "SEA",
-        HOU: "HOU",
-        OAK: "OAK",
-        ATL: "ATL",
-        NYM: "NYN", //
-        FLA: "MIA", //
-        PHI: "PHI",
-        WSN: "WAS", //
-        MIL: "MIL",
-        PIT: "PIT",
-        CHC: "CHN", //
-        STL: "SLN", //
-        CIN: "CIN",
-        ARI: "ARI",
-        LAD: "LAN", //
-        SDP: "SDN", //
-        SFG: "SFN", //
-        COL: "COL",
+        // SEA: "SEA",
+        // HOU: "HOU",
+        // OAK: "OAK",
+        // ATL: "ATL",
+        // NYM: "NYN", //
+        // FLA: "MIA", //
+        // PHI: "PHI",
+        // WSN: "WAS", //
+        // MIL: "MIL",
+        // PIT: "PIT",
+        // CHC: "CHN", //
+        // STL: "SLN", //
+        // CIN: "CIN",
+        // ARI: "ARI",
+        // LAD: "LAN", //
+        // SDP: "SDN", //
+        // SFG: "SFN", //
+        // COL: "COL",
       };
 
-      // turn teamID keys into an array
-      const teams = Object.keys(teamID);
-
-      // model.updateMany this array
-      const update = await model.updateMany(
+      const bulkArray = [
         {
-          // franchID: { $in: teams },
-          franchID: { $in: ["NYY", "TOR"] },
-        },
-        {
-          $set: {
-            // teamID: teams[teamID],
-            teamID: "test",
+          updateOne: {
+            filter: { franchID: "NYY" },
+            update: { teamID: "NYA" },
+            // update: { $set: { teamID: "NYA" } },
+            upsert: true,
           },
-        }
-      );
-      // set the teamID for each team
+        },
+      ];
+
+      // Object.entries(teamID).forEach(([key, value]) => {
+      //   // console.log(key, value);
+      //   bulkArray.push({
+      //     updateOne: {
+      //       filter: { franchID: key },
+      //       update: { $set: { teamID: teamID[key] } },
+      //       upsert: true,
+      //     },
+      //   });
+      // });
+
+      // console.log(bulkArray);
+      // console.log(bulkArray[0].updateOne.update);
+
+      const update = await model.bulkWrite(bulkArray);
+      // might need this?
+      //  , { options: { bypassDocumentValidation: true } }
       console.log(update);
+
+      // // turn teamID keys into an array
+      // const teams = Object.keys(teamID);
+
+      // // model.updateMany this array
+      // const update = await model.updateMany(
+      //   {
+      //     // franchID: { $in: teams },
+      //     franchID: { $in: ["NYY", "TOR"] },
+      //   },
+      //   {
+      //     $set: {
+      //       // teamID: teams[teamID],
+      //       teamID: "test",
+      //     },
+      //   }
+      // );
+
+      // const update = await model.update(
+      //   {
+
+      //   }
+      // )
+
+      // set the teamID for each team
+      // console.log(update);
       return true;
     } catch (error) {
       console.error(error);
