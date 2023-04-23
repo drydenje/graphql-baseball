@@ -10,6 +10,7 @@ const schema = new mongoose.Schema({
   NAassoc: String,
   league: String,
   division: String,
+  teamID: String,
 });
 
 const model = mongoose.model("Franchise", schema);
@@ -85,58 +86,58 @@ class Franchise {
     try {
       const teamID = {
         NYY: "NYA", //
-        // BAL: "BAL",
-        // TBD: "TBA", //
-        // TOR: "TOR",
-        // BOS: "BOS",
-        // MIN: "MIN",
-        // CLE: "CLE",
-        // CHW: "CHA", //
-        // DET: "DET",
-        // KCR: "KCA", //
-        // TEX: "TEX",
+        BAL: "BAL",
+        TBD: "TBA", //
+        TOR: "TOR",
+        BOS: "BOS",
+        MIN: "MIN",
+        CLE: "CLE",
+        CHW: "CHA", //
+        DET: "DET",
+        KCR: "KCA", //
+        TEX: "TEX",
         ANA: "ANA",
-        // SEA: "SEA",
-        // HOU: "HOU",
-        // OAK: "OAK",
-        // ATL: "ATL",
-        // NYM: "NYN", //
-        // FLA: "MIA", //
-        // PHI: "PHI",
-        // WSN: "WAS", //
-        // MIL: "MIL",
-        // PIT: "PIT",
-        // CHC: "CHN", //
-        // STL: "SLN", //
-        // CIN: "CIN",
-        // ARI: "ARI",
-        // LAD: "LAN", //
-        // SDP: "SDN", //
-        // SFG: "SFN", //
-        // COL: "COL",
+        SEA: "SEA",
+        HOU: "HOU",
+        OAK: "OAK",
+        ATL: "ATL",
+        NYM: "NYN", //
+        FLA: "MIA", //
+        PHI: "PHI",
+        WSN: "WAS", //
+        MIL: "MIL",
+        PIT: "PIT",
+        CHC: "CHN", //
+        STL: "SLN", //
+        CIN: "CIN",
+        ARI: "ARI",
+        LAD: "LAN", //
+        SDP: "SDN", //
+        SFG: "SFN", //
+        COL: "COL",
       };
 
       const bulkArray = [
-        {
-          updateOne: {
-            filter: { franchID: "NYY" },
-            update: { teamID: "NYA" },
-            // update: { $set: { teamID: "NYA" } },
-            upsert: true,
-          },
-        },
+        // {
+        //   updateOne: {
+        //     filter: { franchID: "NYY" },
+        //     update: { teamID: "NYA" },
+        //     // update: { $set: { teamID: "NYA" } },
+        //     upsert: true,
+        //   },
+        // },
       ];
 
-      // Object.entries(teamID).forEach(([key, value]) => {
-      //   // console.log(key, value);
-      //   bulkArray.push({
-      //     updateOne: {
-      //       filter: { franchID: key },
-      //       update: { $set: { teamID: teamID[key] } },
-      //       upsert: true,
-      //     },
-      //   });
-      // });
+      Object.entries(teamID).forEach(([key, value]) => {
+        // console.log(key, value);
+        bulkArray.push({
+          updateOne: {
+            filter: { franchID: key },
+            update: { $set: { teamID: teamID[key] } },
+            upsert: true,
+          },
+        });
+      });
 
       // console.log(bulkArray);
       // console.log(bulkArray[0].updateOne.update);
