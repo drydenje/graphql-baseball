@@ -10,6 +10,7 @@ const schema = new mongoose.Schema({
   NAassoc: String,
   league: String,
   division: String,
+  teamID: String,
 });
 
 const model = mongoose.model("Franchise", schema);
@@ -42,8 +43,10 @@ class Franchise {
     }
   }
 
-  static async getFranchiseRoster(teamID) {
+  static async getFranchiseRoster(franchID) {
     try {
+      const { teamID } = await model.findOne({ franchID: franchID });
+
       // find which players had at-bats for a specific team
       const { players: hitterStats } = await Batting.getLastRosterStats(teamID);
       const { players: pitcherStats } = await Pitching.getLastRosterStats(
@@ -79,12 +82,69 @@ class Franchise {
     }
   }
 
+  // Takes franchID and returns a teamID
+  // used in updateTeams for other query lookups
+  static async updateTeamID() {
+    try {
+      const teamID = {
+        NYY: "NYA", //
+        BAL: "BAL",
+        TBD: "TBA", //
+        TOR: "TOR",
+        BOS: "BOS",
+        MIN: "MIN",
+        CLE: "CLE",
+        CHW: "CHA", //
+        DET: "DET",
+        KCR: "KCA", //
+        TEX: "TEX",
+        ANA: "ANA",
+        SEA: "SEA",
+        HOU: "HOU",
+        OAK: "OAK",
+        ATL: "ATL",
+        NYM: "NYN", //
+        FLA: "MIA", //
+        PHI: "PHI",
+        WSN: "WAS", //
+        MIL: "MIL",
+        PIT: "PIT",
+        CHC: "CHN", //
+        STL: "SLN", //
+        CIN: "CIN",
+        ARI: "ARI",
+        LAD: "LAN", //
+        SDP: "SDN", //
+        SFG: "SFN", //
+        COL: "COL",
+      };
+
+      const bulkArray = [];
+
+      Object.entries(teamID).forEach(([key, value]) => {
+        bulkArray.push({
+          updateOne: {
+            filter: { franchID: key },
+            update: { $set: { teamID: teamID[key] } },
+            upsert: true,
+          },
+        });
+      });
+
+      const update = await model.bulkWrite(bulkArray);
+
+      return true;
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   static async updateTeams(value) {
-    console.log("value:", value.teams);
     try {
       const update = await model.updateMany(
         {
           franchID: { $in: value.teams },
+          // franchID: { $in: value.teams },
         },
         {
           $set: {
@@ -134,10 +194,9 @@ class Franchise {
       };
 
       Object.entries(divisions).forEach(([key, value]) => {
-        // console.log(`${key}, ${value}`);
         this.updateTeams(value);
       });
-      // console.log(teamsToUpdate);
+
       return true;
     } catch (error) {
       console.error(error);

@@ -12,6 +12,9 @@ const resolvers = {
     adjustFranchiseTable: (obj, { id }, context, info) => {
       return Franchise.adjustFranchiseTable();
     },
+    updateTeamID: (obj, { id }, context, info) => {
+      return Franchise.updateTeamID();
+    },
   },
   Franchise: {
     roster: ({ franchID }, arg, context, info) => {

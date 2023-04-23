@@ -33,6 +33,7 @@ const typeDef = gql`
     franchise(id: ID): Franchise
     activeFranchises: [Franchise]
     adjustFranchiseTable: Boolean
+    updateTeamID: Boolean
   }
 
   # extend type Mutation {
