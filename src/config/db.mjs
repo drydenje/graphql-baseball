@@ -1,6 +1,7 @@
-require("dotenv").config();
+import "dotenv/config";
 
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
+import mongoose from "mongoose";
 const DB_USER = process.env.DB_USER;
 const DB_PASS = process.env.DB_PASS;
 const DB_NAME = process.env.DB_NAME;
@@ -26,4 +27,5 @@ const db = mongoose.connection;
 
 db.on("error", console.error.bind(console, "MongoDB connection failed"));
 
-module.exports = connectDB;
+// module.exports = connectDB;
+export default { connectDB };

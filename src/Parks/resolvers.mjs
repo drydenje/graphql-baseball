@@ -1,4 +1,5 @@
-const { Park } = require("./Park");
+// const { Park } = require("./Park/index.js");
+import Park from "./Park.mjs";
 
 const resolvers = {
   Query: {
@@ -22,6 +23,6 @@ const resolvers = {
   },
 };
 
-module.exports = {
+export default {
   resolvers,
 };

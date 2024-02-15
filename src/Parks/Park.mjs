@@ -1,4 +1,5 @@
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 // The mongoose schema for the 'Parks' object
 const schema = new mongoose.Schema({
@@ -66,6 +67,6 @@ class Park {
   }
 }
 
-module.exports = {
+export default {
   Park,
 };

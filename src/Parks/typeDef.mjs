@@ -1,4 +1,5 @@
-const { gql } = require("apollo-server");
+// const { gql } = require("apollo-server");
+import { gql } from "graphql-tag";
 
 const typeDef = gql`
   type Park {
@@ -19,6 +20,6 @@ const typeDef = gql`
   }
 `;
 
-module.exports = {
+export default {
   typeDef,
 };
