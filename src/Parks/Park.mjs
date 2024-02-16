@@ -1,4 +1,3 @@
-// const mongoose = require("mongoose");
 import mongoose from "mongoose";
 
 // The mongoose schema for the 'Parks' object
@@ -67,6 +66,4 @@ class Park {
   }
 }
 
-export default {
-  Park,
-};
+export default Park;

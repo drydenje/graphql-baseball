@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const schema = new mongoose.Schema({
   playerID: String,
@@ -71,6 +71,4 @@ class Pitching {
   }
 }
 
-module.exports = {
-  Pitching,
-};
+export default Pitching;

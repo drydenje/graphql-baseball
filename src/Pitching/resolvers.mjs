@@ -1,4 +1,4 @@
-const { Pitching } = require("./Pitching");
+import Pitching from "./Pitching.mjs";
 
 const resolvers = {
   Query: {
@@ -8,6 +8,4 @@ const resolvers = {
   },
 };
 
-module.exports = {
-  resolvers,
-};
+export default resolvers;

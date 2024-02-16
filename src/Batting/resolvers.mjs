@@ -1,4 +1,4 @@
-const { Batting } = require("./Batting");
+import Batting from "./Batting.mjs";
 
 const resolvers = {
   Query: {
@@ -9,6 +9,4 @@ const resolvers = {
   },
 };
 
-module.exports = {
-  resolvers,
-};
+export default resolvers;

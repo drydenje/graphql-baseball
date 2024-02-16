@@ -1,4 +1,4 @@
-const { gql } = require("apollo-server");
+import gql from "graphql-tag";
 
 const typeDef = gql`
   type Player {
@@ -26,8 +26,8 @@ const typeDef = gql`
     deathCountry: String
     deathState: String
     deathCity: String
-    basicPitchingStats: [Pitching]
-    basicBattingStats(limit: Int): [Batting]
+    # basicPitchingStats: [Pitching]
+    # basicBattingStats(limit: Int): [Batting]
   }
 
   extend type Query {
@@ -36,6 +36,4 @@ const typeDef = gql`
   }
 `;
 
-module.exports = {
-  typeDef,
-};
+export default typeDef;

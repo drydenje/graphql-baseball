@@ -1,4 +1,3 @@
-// const { Park } = require("./Park/index.js");
 import Park from "./Park.mjs";
 
 const resolvers = {
@@ -23,6 +22,4 @@ const resolvers = {
   },
 };
 
-export default {
-  resolvers,
-};
+export default resolvers;
