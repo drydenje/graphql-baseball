@@ -46,6 +46,7 @@ class Batting {
       case "DESC":
         toSort = -1;
       default:
+        toSort = 1;
         break;
     }
 

@@ -2,8 +2,9 @@ import Player from "./Player.mjs";
 
 // type 'Pitching' not defined in schema?
 import Pitching from "../Pitching/Pitching.mjs";
-import Batting from "../Batting/index.mjs";
+import Batting from "../Batting/Batting.mjs";
 
+// console.log(Batting.searchByPlayerID);
 const resolvers = {
   Query: {
     players: () => Player.all(),
@@ -12,13 +13,14 @@ const resolvers = {
     },
   },
   Player: {
-    // basicPitchingStats: ({ playerID }, arg, context, info) => {
-    //   return Pitching.searchByPlayerID(playerID);
-    // },
-    // basicBattingStats: (obj, arg, context, info) => {
-    //   const { playerID, limit, teamID } = obj;
-    //   return Batting.searchByPlayerID(playerID, limit, teamID);
-    // },
+    basicPitchingStats: ({ playerID }, arg, context, info) => {
+      return Pitching.searchByPlayerID(playerID);
+    },
+    basicBattingStats: (obj, arg, context, info) => {
+      const { playerID, limit, teamID } = obj;
+
+      return Batting.searchByPlayerID(playerID, limit, teamID);
+    },
   },
 };
 
