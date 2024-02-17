@@ -1,4 +1,4 @@
-const { Franchise } = require("./Franchise");
+import Franchise from "./Franchise.mjs";
 
 const resolvers = {
   Query: {
@@ -23,6 +23,4 @@ const resolvers = {
   },
 };
 
-module.exports = {
-  resolvers,
-};
+export default resolvers;

@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const schema = new mongoose.Schema({
   id: String,
@@ -58,6 +58,4 @@ class Pick {
   }
 }
 
-module.exports = {
-  Pick,
-};
+export default Pick;

@@ -1,5 +1,5 @@
-const { Appearance } = require("./Appearance");
-const { Franchise } = require("../Franchises/Franchise");
+import Appearance from "./Appearance.mjs";
+import Franchise from "../Franchises/Franchise.mjs";
 
 const resolvers = {
   Query: {
@@ -15,6 +15,4 @@ const resolvers = {
   },
 };
 
-module.exports = {
-  resolvers,
-};
+export default resolvers;

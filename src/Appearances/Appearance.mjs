@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const schema = new mongoose.Schema({
   yearID: Number,
@@ -46,6 +46,4 @@ class Appearance {
   }
 }
 
-module.exports = {
-  Appearance,
-};
+export default Appearance;

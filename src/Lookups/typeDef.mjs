@@ -1,4 +1,4 @@
-const { gql } = require("apollo-server");
+import gql from "graphql-tag";
 
 const typeDef = gql`
   type Lookup {
@@ -28,6 +28,4 @@ const typeDef = gql`
   }
 `;
 
-module.exports = {
-  typeDef,
-};
+export default typeDef;

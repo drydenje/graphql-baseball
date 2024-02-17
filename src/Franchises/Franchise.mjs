@@ -1,7 +1,7 @@
-const mongoose = require("mongoose");
-const { Batting } = require("../Batting/Batting");
-const { Pitching } = require("../Pitching/Pitching");
-const { Player } = require("../Players/Player");
+import mongoose from "mongoose";
+import Batting from "../Batting/Batting.mjs";
+import Pitching from "../Pitching/Pitching.mjs";
+import Player from "../Players/Player.mjs";
 
 const schema = new mongoose.Schema({
   franchID: String,
@@ -204,6 +204,4 @@ class Franchise {
   }
 }
 
-module.exports = {
-  Franchise,
-};
+export default Franchise;

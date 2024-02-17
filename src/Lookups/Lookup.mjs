@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const schema = new mongoose.Schema({
   IDPLAYER: String,
@@ -60,6 +60,4 @@ class Lookup {
   }
 }
 
-module.exports = {
-  Lookup,
-};
+export default Lookup;

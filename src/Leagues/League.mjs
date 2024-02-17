@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const PositionSchema = new mongoose.Schema({
   position: String,
@@ -105,6 +105,4 @@ class League {
   // }
 }
 
-module.exports = {
-  League,
-};
+export default League;

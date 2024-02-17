@@ -4,46 +4,44 @@ import { startStandaloneServer } from "@apollo/server/standalone";
 import gql from "graphql-tag";
 import { connectDB } from "./config/db.mjs";
 
-// import { appearances } from "./Appearances";
+import appearances from "./Appearances/index.mjs";
 import batting from "./Batting/index.mjs";
-// import { franchises } from "./Franchises";
-// import { league } from "./Leagues";
-// import { lookups } from "./Lookups";
+import franchises from "./Franchises/index.mjs";
+import league from "./Leagues/index.mjs";
+import lookups from "./Lookups/index.mjs";
 import parks from "./Parks/index.mjs";
-// import { picks } from "./Picks";
+import picks from "./Picks/index.mjs";
 import pitching from "./Pitching/index.mjs";
 import players from "./Players/index.mjs";
 
 const typeDef = gql`
   type Query
-  # type Mutation
+  type Mutation
 `;
 
 connectDB();
 
 const server = new ApolloServer({
-  // typeDefs: [typeDef, parks.typeDef, players.typeDef],
-  // resolvers: [parks.resolvers, players.resolvers],
   typeDefs: [
     typeDef,
-    //     appearances.typeDef,
+    appearances.typeDef,
     batting.typeDef,
-    //     franchises.typeDef,
-    //     league.typeDef,
-    //     lookups.typeDef,
+    franchises.typeDef,
+    league.typeDef,
+    lookups.typeDef,
     parks.typeDef,
-    //     picks.typeDef,
+    picks.typeDef,
     pitching.typeDef,
     players.typeDef,
   ],
   resolvers: [
-    //     appearances.resolvers,
+    appearances.resolvers,
     batting.resolvers,
-    //     franchises.resolvers,
-    //     league.resolvers,
-    //     lookups.resolvers,
+    franchises.resolvers,
+    league.resolvers,
+    lookups.resolvers,
     parks.resolvers,
-    //     picks.resolvers,
+    picks.resolvers,
     pitching.resolvers,
     players.resolvers,
   ],
@@ -55,37 +53,6 @@ const { url } = await startStandaloneServer(server, {
 });
 
 console.log(`Server ready at ${url}`);
-
-// await server.start();
-
-// /*
-// const server = new ApolloServer({
-//   typeDefs: [
-//     typeDef,
-//     appearances.typeDef,
-//     batting.typeDef,
-//     franchises.typeDef,
-//     league.typeDef,
-//     lookups.typeDef,
-//     parks.typeDef,
-//     picks.typeDef,
-//     pitching.typeDef,
-//     players.typeDef,
-//   ],
-//   resolvers: [
-//     appearances.resolvers,
-//     batting.resolvers,
-//     franchises.resolvers,
-//     league.resolvers,
-//     lookups.resolvers,
-//     parks.resolvers,
-//     picks.resolvers,
-//     pitching.resolvers,
-//     players.resolvers,
-//   ],
-//   playground: true,
-// });
-// */
 
 // db.on("error", console.error.bind(console, "connection error:"));
 // db.once("open", function () {

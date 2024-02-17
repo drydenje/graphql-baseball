@@ -1,5 +1,5 @@
-const { League } = require("./League");
-const { Pick } = require("../Picks");
+import League from "./League.mjs";
+import Pick from "../Picks/Pick.mjs";
 
 const resolvers = {
   Query: {
@@ -23,6 +23,4 @@ const resolvers = {
   },
 };
 
-module.exports = {
-  resolvers,
-};
+export default resolvers;

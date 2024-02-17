@@ -1,5 +1,5 @@
-const { Pick } = require("./Pick");
-const { Player } = require("../Players/Player");
+import Pick from "./Pick.mjs";
+import Player from "../Players/Player.mjs";
 
 const resolvers = {
   Query: {
@@ -28,6 +28,4 @@ const resolvers = {
   },
 };
 
-module.exports = {
-  resolvers,
-};
+export default resolvers;

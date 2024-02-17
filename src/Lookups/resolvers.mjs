@@ -1,4 +1,4 @@
-const { Lookup } = require("./Lookup");
+import Lookup from "./Lookup.mjs";
 
 const resolvers = {
   Query: {
@@ -8,6 +8,4 @@ const resolvers = {
   },
 };
 
-module.exports = {
-  resolvers,
-};
+export default resolvers;
