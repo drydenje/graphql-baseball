@@ -27,15 +27,15 @@ const typeDef = gql`
   }
 
   extend type Mutation {
-    # addPick(pick: PickInput): Pick
-    addPick(
-      id: ID
-      playerId: String
-      teamId: String
-      leagueId: String
-      pos: String
-      cost: Int
-    ): Pick
+    addPick(pick: PickInput): Pick
+    # addPick(
+    #   id: ID
+    #   playerId: String
+    #   teamId: String
+    #   leagueId: String
+    #   pos: String
+    #   cost: Int
+    # ): Pick
   }
 `;
 
